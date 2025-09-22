@@ -1,4 +1,78 @@
-<dt onclick="toggleFaq(this)">How much does the service cost? / Combien coûte le service ?</dt>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canada Immigration Visa and Jobs Support (CIVAJS)</title>
+<style>
+  body {font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333;}
+  header {background:#016937; color:#fff; padding: 15px 30px; text-align:center;}
+  header h1 {margin: 0; font-size: 2.2em; font-weight: bold;}
+  main {padding: 30px; max-width: 900px; margin: auto; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+  section {margin-bottom: 30px;}
+  h2 {color: #016937;}
+  .btn-primary {background: #016937; color: white; padding: 12px 25px; border: none; border-radius: 4px; font-size: 1.2em; cursor: pointer; text-decoration: none; display: inline-block;}
+  .btn-primary:hover {background:#014d22;}
+  .contact-info, .social-links {font-size: 1.1em; margin-top: 10px;}
+  .faq dt {font-weight: bold; margin-top: 15px; cursor: pointer;}
+  .faq dd {margin-left: 20px; margin-bottom: 10px; display: none;}
+  .faq dd.visible {display: block;}
+  footer {background:#f0f0f0; text-align:center; padding: 20px 0; font-size: 0.9em;}
+  .urgency-banner {background:#ff4c4c; color:white; text-align:center; padding: 15px 0; font-size: 1.1em; font-weight: bold;}
+  .trust-badges {display: flex; justify-content: center; gap: 15px; margin-top: 10px;}
+  .badge {background: #016937; color: white; padding: 10px 15px; border-radius: 5px; font-size: 0.9em;}
+</style>
+<script>
+// Simple FAQ toggle
+function toggleFaq(el) {
+  const dd = el.nextElementSibling;
+  if(dd.classList.contains('visible')) {
+    dd.classList.remove('visible');
+  } else {
+    dd.classList.add('visible');
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <h1>Canada Immigration Visa and Jobs Support (CIVAJS)</h1>
+</header>
+<div class="urgency-banner">Book Your FREE Consultation - Limited Slots Available!</div>
+<main>
+  <section class="intro">
+    <h2>Welcome to CIVAJS</h2>
+    <p>Your trusted partner in navigating Canadian immigration and job opportunities. We provide personalized, expert support to help you and your family start a new life in Canada.</p>
+  </section>
+  <section class="services">
+    <h2>Our Services / Nos Services</h2>
+    <ul>
+      <li>Visa Application Assistance / Assistance à la demande de visa</li>
+      <li>Job Search Support / Soutien à la recherche d'emploi</li>
+      <li>Document Preparation and Review / Préparation et révision des documents</li>
+      <li>Interview Coaching / Coaching d'entretien</li>
+      <li>Legal Advisory / Consultation juridique</li>
+    </ul>
+  </section>
+  <section class="contact">
+    <h2>Contact Us / Contactez-nous</h2>
+    <p class="contact-info">Phone / Téléphone: <a href="tel:+16562007384">+1 656 200 7384</a><br>Email: <a href="mailto:stacy_cooper@myyahoo.com">stacy_cooper@myyahoo.com</a></p>
+    <p>Live Chat Support (Click to chat): <a href="#" onclick="alert('Chat feature coming soon!')">Start Chat</a></p>
+  </section>
+  <section class="video">
+    <h2>Introduction Video / Vidéo d'introduction</h2>
+    <p>We will update this section with a short video soon. / Nous mettrons bientôt à jour cette section avec une courte vidéo.</p>
+  </section>
+  <section class="testimonials">
+    <h2>What Our Clients Say / Témoignages de nos clients</h2>
+    <blockquote>"CIVAJS made my Canadian immigration process smooth and stress-free! Highly recommend." - A. Smith</blockquote>
+    <blockquote>"Thanks to their expert help, I landed a great job in Toronto. Merci!" - M. Dupont</blockquote>
+  </section>
+  <section class="faq">
+    <h2>Frequently Asked Questions / Questions fréquentes</h2>
+    <dl>
+      <dt onclick="toggleFaq(this)">What is the typical processing time? / Quel est le délai de traitement habituel ?</dt>
+      <dd>Processing times vary depending on visa type; usually 6-12 months. / Les délais varient selon le type de visa; généralement 6-12 mois.</dd><dt onclick="toggleFaq(this)">How much does the service cost? / Combien coûte le service ?</dt>
       <dd>Our pricing is transparent and affordable. Contact us for a quote. / Nos tarifs sont transparents et abordables. Contactez-nous pour un devis.</dd>
       <dt onclick="toggleFaq(this)">Do you provide legal advice? / Fournissez-vous des conseils juridiques ?</dt>
       <dd>Yes, we have qualified immigration legal advisors on staff. / Oui, nous avons des conseillers juridiques qualifiés en immigration.</dd>
