@@ -1,94 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Canada Immigration Visa and Jobs Support (CIVAJS)</title>
+<meta name="description" content="Expert Canadian immigration visa and jobs support. Personalized guidance, document review, job coaching & legal advice. Start your new life in Canada today." />
+<meta name="keywords" content="Canada immigration, visa assistance, job search support, immigration legal advice, Canadian visa, job coaching Canada" />
+<meta property="og:title" content="Canada Immigration Visa and Jobs Support (CIVAJS)" />
+<meta property="og:description" content="Professional and trusted immigration and job support services to start your life in Canada." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https:///github.com/Marfenckysbot/civajs-landing/" />
+<meta property="og:image" content="https://your-website.com/images/share-image.png" />
+<link rel="canonical" href="https:///github.com/Marfenckysbot/civajs-landing/" />
 <style>
-  body {font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333;}
-  header {background:#016937; color:#fff; padding: 15px 30px; text-align:center;}
-  header h1 {margin: 0; font-size: 2.2em; font-weight: bold;}
-  main {padding: 30px; max-width: 900px; margin: auto; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
-  section {margin-bottom: 30px;}
-  h2 {color: #016937;}
-  .btn-primary {background: #016937; color: white; padding: 12px 25px; border: none; border-radius: 4px; font-size: 1.2em; cursor: pointer; text-decoration: none; display: inline-block;}
-  .btn-primary:hover {background:#014d22;}
-  .contact-info, .social-links {font-size: 1.1em; margin-top: 10px;}
-  .faq dt {font-weight: bold; margin-top: 15px; cursor: pointer;}
-  .faq dd {margin-left: 20px; margin-bottom: 10px; display: none;}
-  .faq dd.visible {display: block;}
-  footer {background:#f0f0f0; text-align:center; padding: 20px 0; font-size: 0.9em;}
-  .urgency-banner {background:#ff4c4c; color:white; text-align:center; padding: 15px 0; font-size: 1.1em; font-weight: bold;}
-  .trust-badges {display: flex; justify-content: center; gap: 15px; margin-top: 10px;}
-  .badge {background: #016937; color: white; padding: 10px 15px; border-radius: 5px; font-size: 0.9em;}
-</style>
-<script>
-// Simple FAQ toggle
-function toggleFaq(el) {
-  const dd = el.nextElementSibling;
-  if(dd.classList.contains('visible')) {
-    dd.classList.remove('visible');
-  } else {
-    dd.classList.add('visible');
+  /* [Insert all previous optimized styles here] */
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
   }
-}
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: linear-gradient(135deg, #eaf3ea, #ffffff);
+    color: #2a2a2a;
+    scroll-behavior: smooth;
+  }
+  a {
+    color: #d12b2b;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  nav {
+    background: #016937;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.2);
+  }
+  .nav-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .nav-contact a {
+    background-color: #d12b2b;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .nav-contact a:hover {
+    background-color: #a11e1e;
+  }
+  .urgency-banner {
+    background: #d12b2b;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: 18px 0;
+    font-size: 1.2rem;
+  }
+  .countdown {
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    margin-left: 8px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 30px auto 60px;
+    background: white;
+    padding: 30px 25px 50px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  h1, h2, h3 {
+    color: #016937;
+    margin-bottom: 12px;
+  }
+  p {
+    line-height: 1.6;
+  }
+  ul.services-list {
+    padding-left: 20px;
+    list-style-type: none;
+  }
+  ul.services-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+  }
+  ul.services-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #d12b2b;
+    font-weight: bold;
+  }
+  .contact-info a {
+    color: #016937;
+    font-weight: 600;
+  }
+  .btn-primary {
+    background: #d12b2b;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .btn-primary:hover {
+    background: #a11e1e;
+  }
+  .video-placeholder {
+    background: #f7f7f7;
+    border: 2px dashed #d12b2b;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-weight: 600;
+    margin: 15px 0 30px;
+    border-radius: 8px;
+  }
+  .testimonials blockquote {
+    font-style: italic;
+    color: #444;
+    background: #e8f1e4;
+    padding: 18px 22px;
+    border-left: 6px solid #d12b2b;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  .faq dt {
+    font-weight: 700;
+    margin-top: 25px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+  }
+  .faq dt::after {
+    content: '+';
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .faq dt.open::after {
+    content: '-';
+  }
+  .faq dd {
+    margin-left: 20px;
+    margin-top: 8px;
+    display: none;
+    line-height: 1.5;
+  }
+  .faq dd.visible {
+    display: block;
+  }
+  .trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 30px;
+  }
+  .badge {
+    background: #016937;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  .newsletter {
+    background-color: #eaf3ea;
+    padding: 25px 30px;
+    border-radius: 10px;
+    max-width: 450px;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+  .newsletter input[type="email"] {
+    padding: 12px 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 70%;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  .newsletter button {
+    padding: 12px 18px;
+    background-color: #d12b2b;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .newsletter button:hover {
+    background-color: #a11e1e;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 20px;
+  }
+  .social-links a {
+    font-size: 1.6rem;
+    color: #d12b2b;
+    transition: color 0.2s ease;
+  }
+  .social-links a:hover {
+    color: #a11e1e;
+  }
+  footer {
+    padding: 18px 0;
+    background-color: #016937;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  @media(max-width: 700px) {
+    body {
+      font-size: 14px;
+    }
+  }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'YOUR_GA_TRACKING_ID');
+</script>
+<script>
+// FAQ toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const dts = document.querySelectorAll(".faq dt");
+  dts.forEach((dt) => {
+    dt.addEventListener("click", () => {
+      const dd = dt.nextElementSibling;
+      dt.classList.toggle("open");
+      if (dd.style.display === "block") {
+        dd.style.display = "none";
+      } else {
+        dd.style.display = "block";
+      }
+    });
+  });
+});
 </script>
 </head>
 <body>
-<header>
-  <h1>Canada Immigration Visa and Jobs Support (CIVAJS)</h1>
-</header>
-<div class="urgency-banner">Book Your FREE Consultation - Limited Slots Available!</div>
-<main>
-  <section class="intro">
-    <h2>Welcome to CIVAJS</h2>
-    <p>Your trusted partner in navigating Canadian immigration and job opportunities. We provide personalized, expert support to help you and your family start a new life in Canada.</p>
-  </section>
-  <section class="services">
-    <h2>Our Services / Nos Services</h2>
-    <ul>
-      <li>Visa Application Assistance / Assistance à la demande de visa</li>
-      <li>Job Search Support / Soutien à la recherche d'emploi</li>
-      <li>Document Preparation and Review / Préparation et révision des documents</li>
-      <li>Interview Coaching / Coaching d'entretien</li>
-      <li>Legal Advisory / Consultation juridique</li>
-    </ul>
-  </section>
-  <section class="contact">
-    <h2>Contact Us / Contactez-nous</h2>
-    <p class="contact-info">Phone / Téléphone: <a href="tel:+16562007384">+1 656 200 7384</a><br>Email: <a href="mailto:stacy_cooper@myyahoo.com">stacy_cooper@myyahoo.com</a></p>
-    <p>Live Chat Support (Click to chat): <a href="#" onclick="alert('Chat feature coming soon!')">Start Chat</a></p>
-  </section>
-  <section class="video">
-    <h2>Introduction Video / Vidéo d'introduction</h2>
-    <p>We will update this section with a short video soon. / Nous mettrons bientôt à jour cette section avec une courte vidéo.</p>
-  </section>
-  <section class="testimonials">
-    <h2>What Our Clients Say / Témoignages de nos clients</h2>
+<nav>
+  <div class="nav-title">CIVAJS - Canada Immigration & Jobs</div>
+  <div class="nav-contact">
+    <a href="tel:+16562007384">Call Now: +1 656 200 7384</a>
+  </div>
+</nav>
+<div class="urgency-banner">
+  Book Your FREE Consultation - Limited Slots Available!
+  <span id="countdown-timer" class="countdown"></span>
+</div>
+<div class="container">
+  <h1>Welcome to Canada Immigration Visa and Jobs Support (CIVAJS)</h1>
+  <p>Your trusted partner in navigating Canadian immigration and job opportunities. We provide personalized, expert support to help you and your family start a new life in Canada.</p>
+
+  <h2>Our Services / Nos Services</h2>
+  <ul class="services-list">
+    <li>Visa Application Assistance / Assistance à la demande de visa</li>
+    <li>Job Search Support / Soutien à la recherche d'emploi</li>
+    <li>Document Preparation and Review / Préparation et révision des documents</li>
+    <li>Interview Coaching / Coaching d'entretien</li>
+    <li>Legal Advisory / Consultation juridique</li>
+  </ul>
+
+  <h2>Contact Us / Contactez-nous</h2>
+  <p class="contact-info">
+    Phone / Téléphone: <a href="tel:+16562007384">+1 656 200 7384</a><br/>
+    Email: <a href="mailto:stacy_cooper@myyahoo.com">stacy_cooper@myyahoo.com</a>
+  </p>
+  <p>Live Chat Support (Click to chat): <a href="#" onclick="alert('Chat feature coming soon!')">Start Chat</a></p>
+
+  <h2>Introduction Video / Vidéo d'introduction</h2>
+  <div class="video-placeholder">
+    Video coming soon! / Vidéo bientôt disponible!
+  </div>
+  <h2>What Our Clients Say / Témoignages de nos clients</h2>
+  <div class="testimonials">
     <blockquote>"CIVAJS made my Canadian immigration process smooth and stress-free! Highly recommend." - A. Smith</blockquote>
     <blockquote>"Thanks to their expert help, I landed a great job in Toronto. Merci!" - M. Dupont</blockquote>
-  </section>
-  <section class="faq">
-    <h2>Frequently Asked Questions / Questions fréquentes</h2>
-    <dl>
-      <dt onclick="toggleFaq(this)">What is the typical processing time? / Quel est le délai de traitement habituel ?</dt>
-      <dd>Processing times vary depending on visa type; usually 6-12 months. / Les délais varient selon le type de visa; généralement 6-12 mois.</dd><dt onclick="toggleFaq(this)">How much does the service cost? / Combien coûte le service ?</dt>
-      <dd>Our pricing is transparent and affordable. Contact us for a quote. / Nos tarifs sont transparents et abordables. Contactez-nous pour un devis.</dd>
-      <dt onclick="toggleFaq(this)">Do you provide legal advice? / Fournissez-vous des conseils juridiques ?</dt>
-      <dd>Yes, we have qualified immigration legal advisors on staff. / Oui, nous avons des conseillers juridiques qualifiés en immigration.</dd>
-    </dl>
-  </section>
-  <section class="trust">
-    <h2>Trusted By / Approuvé par</h2>
-    <div class="trust-badges">
-      <div class="badge">Licensed Consultants / Consultants agréés</div>
-      <div class="badge">100% Confidential / 100% confidentiel</div>
-      <div class="badge">Canadian Federation Member / Membre de la fédération canadienne</div>
-    </div>
-  </section>
-</main>
+  </div>
+
+  <h2>Frequently Asked Questions / Questions fréquentes</h2>
+  <dl class="faq">
+    <dt>What is the typical processing time? / Quel est le délai de traitement habituel ?</dt>
+    <dd>Processing times vary by visa; usually 6-12 months. / Les délais varient selon le type de visa; généralement 6-12 mois.</dd>
+    <dt>How much does the service cost? / Combien coûte le service ?</dt>
+    <dd>Our pricing is transparent and affordable. Contact us for a quote. / Nos tarifs sont transparents et abordables. Contactez-nous pour un devis.</dd>
+    <dt>Do you provide legal advice? / Fournissez-vous des conseils juridiques ?</dt>
+    <dd>Yes, we have qualified immigration legal advisors on staff. / Oui, nous avons des conseillers juridiques qualifiés en immigration.</dd>
+  </dl>
+
+  <h2>Subscribe to Our Newsletter / Abonnez-vous à notre Newsletter</h2>
+  <form class="newsletter" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+    <input type="email" placeholder="Your email / Votre e-mail" required />
+    <button type="submit">Subscribe / S'abonner</button>
+  </form>
+
+  <h2>Follow Us / Suivez-nous</h2>
+  <div class="social-links">
+    <a href="#" title="Facebook" aria-label="Facebook">&#xf09a;</a>
+    <a href="#" title="Twitter" aria-label="Twitter">&#xf099;</a>
+    <a href="#" title="Instagram" aria-label="Instagram">&#xf16d;</a>
+    <a href="#" title="LinkedIn" aria-label="LinkedIn">&#xf08c;</a>
+  </div>
+
+  <h2>Trusted By / Approuvé par</h2>
+  <div class="trust-badges">
+    <div class="badge">Licensed Consultants / Consultants agréés</div>
+    <div class="badge">100% Confidential / 100% confidentiel</div>
+    <div class="badge">Canadian Federation Member / Membre de la fédération canadienne</div>
+  </div>
+
+</div>
 <footer>
-  <p>&copy; 2025 Canada Immigration Visa and Jobs Support (CIVAJS). Privacy | Confidentiality assured.</p>
+  &copy; 2025 Canada Immigration Visa and Jobs Support (CIVAJS). Privacy | Confidentiality assured.
 </footer>
+
+<!-- Start of Tawk.to Live Chat Script -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),
+s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!-- End of Tawk.to Script -->
+
 </body>
-</html>
+</html>v
