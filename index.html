@@ -1,739 +1,1360 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Canada Immigration Visa and Jobs Support (CIVAJS)</title>
-  <meta name="description" content="Personalized Canadian immigration and job support services. Expert visa guidance and legal advice. Start new life in Canada!" />
-  <meta name="keywords" content="Canada immigration, visa, job support, legal advisory, expert guidance" />
-  <meta name="author" content="CIVAJS" />
-  <meta property="og:title" content="Canada Immigration Visa and Jobs Support (CIVAJS)" />
-  <meta property="og:description" content="Trusted Canadian immigration and job support services for Canadians and more." />
-  <meta property="og:url" content="https://marfenckysbot.github.io/civajs-landing/" />
+  <title>CIVAJS — Canada Immigration Visa and Jobs Support</title>
+  <meta name="description" content="Personalized expert support for Canadian immigration and job assistance. Visa application help, job search support, document review, interview coaching, and legal advisory." />
+  <meta name="theme-color" content="#016937" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="CIVAJS — Canada Immigration Visa and Jobs Support" />
+  <meta property="og:description" content="Expert help for Canadian visas and job support. Book your FREE consultation — limited slots available." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://marfenckysbot.github.io/civajs-landing/assets/og-image.png" />
-  <link rel="canonical" href="https://marfenckysbot.github.io/civajs-landing/" />
-  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAAA0CAYAAADvl6/qAAAA0ElEQVR42u3UMQ0AIBAEQPr/f96zQRNUWbJuEjIB479zIAAUVAIUQikEAYiiL5Vmhalt0SrNDAFzwKbH5l6GFdyTp5to0EzXdzSZkpzNfMgpY9DiBDfEAwggjo4jqCsEDbqgugKBoHnoAcS7iFTfGL2KxVZwSiF0KFE+HwqQEKMFBAwUIpRO5ht/1M6hr0BjuqLqAwKBgTeCBxLuIVj5c8ColumnEri7P6HZMADLPZTaEkwIxwAAAABJRU5ErkJggg==" />
-<style>
-    /* Resetting CSS */
-    * {
-      box-sizing: border-box;
-    }
+  <meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%' height='100%' fill='%23eef2f3'/><text x='50%' y='50%' font-size='48' text-anchor='middle' fill='%23016937'>CIVAJS</text></svg>" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    /* Base styles */
+  <!-- SEO structured data (Organization + Website + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Canada Immigration Visa and Jobs Support (CIVAJS)",
+    "url": "https://www.example.com",
+    "logo": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><rect width='100%' height='100%' rx='10' fill='%23ffffff'/><path d='M32 6l5 9 9-1-6 7 4 8-8-3-4 8-4-8-8 3 4-8-6-7 9 1 5-9z' fill='%23cc2f2f'/></svg>",
+    "sameAs": [
+      "https://www.facebook.com/CitCanada",
+      "https://twitter.com/CitImmCanada",
+      "https://www.linkedin.com/company/immigration-refugees-and-citizenship-canada",
+      "https://www.youtube.com/CitImmCanada"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you guarantee visa approvals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Decisions are made by immigration authorities. We provide guidance, preparation, and support to improve application quality."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer French and Spanish support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We can provide documentation and client support in English, French, and Spanish."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the process take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Timelines vary by application type and official processing. We’ll help you plan and prepare efficiently."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my data be shared?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We prioritize confidentiality. Your information is used strictly for advisory services and not shared without consent."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CGPQDDDTL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-9CGPQDDDTL");
+  </script>
+
+  <style>
+    /* === CSS Reset & Base === */
+    *, *::before, *::after { box-sizing: border-box; }
+    html:focus-within { scroll-behavior: smooth; }
+    body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure { margin: 0; }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #2a2a2a;
-      scroll-behavior: smooth;
-    }
-
-    a {
-      color: #d12b2b;
-      text-decoration: none;
-    }
-
-    a:hover,
-    a:focus {
-      text-decoration: underline;
-      outline: none;
-    }
-
-    /* Animated sticky nav */
-    nav {
-      background-color: rgba(1, 105, 55, 0.95);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 10000;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: white;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-      transition: top 0.4s ease-in-out;
-    }
-
-    .nav-title {
-      font-weight: 700;
-      font-size: 1.5rem;
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-title img {
-      height: 45px;
-      margin-right: 12px;
-    }
-
-    .nav-contact a {
-      background-color: #d12b2b;
-      padding: 10px 20px;
-      border-radius: 30px;
-      font-weight: 700;
-      transition: background-color 0.3s ease;
-      color: white;
-    }
-
-    .nav-contact a:hover,
-    .nav-contact a:focus {
-      background-color: #7f1919;
-    }
-
-    /* Urgency banner */
-    .urgency-banner {
-      background: rgba(209, 43, 43, 0.95);
-      color: white;
-      text-align: center;
-      font-weight: 700;
-      padding: 20px 10px;
-      font-size: 1.3rem;
-      margin-top: 70px;
-      position: relative;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
-    }
-
-    .countdown {
-      font-weight: 900;
-      letter-spacing: 0.06em;
-      margin-left: 12px;
-    }
-
-    /* Main container */
-    main.container {
-      max-width: 960px;
-      margin: 40px auto 80px;
-      background: rgba(255, 255, 255, 0.98);
-      padding: 35px 40px 50px;
-      border-radius: 15px;
-      box-shadow: 0 0 32px rgba(0, 0, 0, 0.42);
-    }
-
-    h1,
-    h2,
-    h3 {
-      color: #016937;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    p,
-    li {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 20px;
-    }
-
-    ul.services-list {
-      list-style: none;
-      padding-left: 0;
-      margin-bottom: 40px;
-    }
-
-  ul.services-list li {
-      position: relative;
-      padding-left: 28px;
-      margin-bottom: 14px;
-      font-weight: 700;
-    }
-
-    ul.services-list li::before {
-      content: '✔';
-      position: absolute;
-      left: 0;
-      top: 2px;
-      color: #cc2f2f;
-      font-weight: 900;
-      font-size: 1.15em;
-    }
-
-    .contact-info a {
-      color: #016937;
-      font-weight: 700;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    .video-placeholder {
-      border: 3px dashed #cc2f2f;
-      background: #f9f9f9;
-      color: #575757;
-      font-weight: 700;
-      text-align: center;
-      padding: 120px 0;
-      margin: 40px auto 60px;
-      max-width: 720px;
-      border-radius: 15px;
-      font-style: italic;
-      font-size: 1.25rem;
-    }
-
-    /* Testimonials section */
-    .testimonials {
-      max-width: 760px;
-      margin: 50px auto;
-      padding: 25px 40px;
-      background-color: #e9f9f0;
-      border-radius: 15px;
-      box-shadow: 0 5px 24px rgba(0, 0, 0, 0.15);
-      position: relative;
-    }
-
-    .testimonial-slide {
-      display: none;
-      font-style: italic;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
       line-height: 1.5;
-      color: #444;
+      color: #222;
+      /* Layered background: base image + radial gradient overlay */
+      background:
+        radial-gradient(1000px 600px at 20% 10%, rgba(1,105,55,0.10), rgba(1,105,55,0) 60%),
+        radial-gradient(800px 500px at 80% 20%, rgba(204,47,47,0.08), rgba(204,47,47,0) 60%),
+        #f5f7f8 url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900"><rect width="100%" height="100%" fill="%23eef2f3"/><text x="50%" y="50%" font-size="48" text-anchor="middle" fill="%23c7d0d9">CANADA • IMMIGRATION</text></svg>') center fixed no-repeat;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: #cc2f2f; text-decoration: none; }
+    a:focus-visible { outline: 3px solid #016937; outline-offset: 2px; }
+    :focus-visible { outline: 3px solid #016937; outline-offset: 2px; }
+    .container { width: min(1100px, 94vw); margin: 0 auto; }
+
+    /* === Color palette === */
+    :root {
+      --green: #016937;
+      --red: #cc2f2f;
+      --red-dark: #a52626;
+      --text: #222;
+      --muted: #6b7280;
+      --panel: #ffffff;
+      --panel-shadow: 0 10px 25px rgba(0,0,0,.08);
+      --radius: 14px;
+      --surface: rgba(255,255,255,.92);
     }
 
-    .testimonial-slide.active {
-      display: block;
-    }
-
-    .testimonial-slide img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      border: 4px solid #cc2f2f;
-      margin-bottom: 12px;
-      object-fit: cover;
-    }
-
-    .testimonial-author {
-      font-weight: 800;
-      color: #016937;
-    }
-
-    /* FAQ styles */
-    .faq dt {
-      font-weight: 700;
-      margin-top: 28px;
-      cursor: pointer;
-      position: relative;
-      padding-right: 30px;
-    }
-
-    .faq dt::after {
-      content: '+';
-      font-weight: 900;
-      position: absolute;
-      right: 0;
-      top: 0;
-      font-size: 1.6rem;
-      color: #cc2f2f;
-      transition: transform 0.3s ease;
-    }
-
-    .faq dt.open::after {
-      content: '-';
-      transform: rotate(180deg);
-    }
-
-    .faq dd {
-      margin-left: 24px;
-      margin-top: 10px;
-      display: none;
-      font-weight: 500;
-      line-height: 1.6;
-    }
-
-    .faq dd.visible {
-      display: block;
-    }
-
-    /* Newsletter subscription form */
-    .newsletter {
-      background-color: #eaf3ea;
-      border-radius: 40px;
-      max-width: 600px;
-      margin: 60px auto 40px;
-      padding: 32px 50px;
-      text-align: center;
-      box-shadow: 0px 6px 50px hsl(112 49% 68% / 0.32);
-    }
-
-    .newsletter form {
-      display: flex;
-      justify-content: center;
-    }
-
-    .newsletter input[type='email'] {
-      font-size: 1.15em;
-      border-radius: 40px 0 0 40px;
-      padding: 18px 26px;
-      width: 65%;
-      border: 1px solid #ccc;
-      border-right: none;
-      outline: none;
-    }
-
-    .newsletter button {
-      padding: 18px 28px;
-      background-color: #cc2f2f;
-      border: none;
-      border-radius: 0 40px 40px 0;
-      font-weight: 700;
-      color: white;
-      cursor: pointer;
-      font-size: 1.2em;
-      transition: background-color 0.3s ease;
-    }
-
-    .newsletter button:hover,
-    .newsletter button:focus {
-      background-color: #7f1919;
-      outline: none;
-    }
-
-    /* Social media links */
-    .social-links {
-      text-align: center;
-      margin-top: 70px;
-      margin-bottom: 60px;
-    }
-
-    .social-links a {
-      display: inline-block;
-      margin: 0 18px;
-      font-size: 2.7em;
-      color: #cc2f2f;
-      transition: color 0.3s ease;
-      cursor: pointer;
-      vertical-align: middle;
-    }
-
-    .social-links a:hover,
-    .social-links a:focus {
-      color: #7f1919;
-      outline: none;
-    }
-
-    /* Using official brand icons as SVG inline */
-    .social-links svg {
-      width: 1em;
-      height: 1em;
-      fill: currentColor;
-      vertical-align: middle;
-      transition: fill 0.3s ease;
-    }
-
-    /* Trust badges */
-    .trust-badges {
-      display: flex;
-      justify-content: center;
-      gap: 28px;
-      margin-top: 60px;
-      flex-wrap: wrap;
-    }
-
-.trust-badge {
-      background-color: #016937;
-      color: white;
-      padding: 18px 38px;
-      border-radius: 40px;
-      font-weight: 700;
-      box-shadow: 0 8px 48px rgba(0, 0, 0, 0.28);
-      text-align: center;
-      min-width: 190px;
-      cursor: default;
-      position: relative;
-    }
-
-    .trust-badge[title]:hover::after {
-      content: attr(title);
-      display: block;
-      margin-top: 9px;
-      font-size: 0.9rem;
-      color: #ccc;
-      font-weight: 500;
-      font-style: italic;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    /* Back to top button */
-    #scrollTopBtn {
+    /* === Parallax layers === */
+    .parallax {
       position: fixed;
-      bottom: 32px;
-      right: 32px;
-      background-color: #cc2f2f;
-      color: white;
-      border: none;
-      padding: 22px 28px;
-      font-size: 28px;
-      border-radius: 50%;
-      cursor: pointer;
-      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
-      display: none;
-      z-index: 11000;
-      transition: background-color 0.3s ease;
+      left: 0; top: 0; width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .leaf {
+      position: absolute;
+      width: 140px; height: 140px;
+      opacity: .12;
+      transform: translate3d(0,0,0);
+      will-change: transform;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cpath d='M70 10l12 22 24-3-16 18 10 20-20-8-10 20-10-20-20 8 10-20-16-18 24 3 12-22z' fill='%23cc2f2f'/%3E%3C/svg%3E") center/contain no-repeat;
     }
 
-    #scrollTopBtn:hover,
-    #scrollTopBtn:focus {
-      background-color: #7f1919;
-      outline: none;
+    /* === Navbar === */
+    nav[role="navigation"] {
+      position: sticky; top: 0; z-index: 1000;
+      background: var(--surface);
+      backdrop-filter: saturate(120%) blur(6px);
+      box-shadow: 0 8px 18px rgba(0,0,0,.06);
+      transition: transform .35s ease;
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: .6rem 0; }
+    .brand { display: inline-flex; align-items: center; gap: .75rem; }
+    .brand img { width: 38px; height: 38px; border-radius: 8px; box-shadow: 0 0 0 2px #016937 inset; }
+    .brand .title { font-weight: 700; color: var(--green); font-size: 1.05rem; letter-spacing: .3px; }
+    .call-btn {
+      background: var(--red); color: #fff; border: none; border-radius: 999px;
+      padding: .6rem 1rem; font-weight: 700; cursor: pointer;
+      box-shadow: 0 6px 14px rgba(204,47,47,.25);
+    }
+    .call-btn:hover, .call-btn:focus-visible { background: var(--red-dark); }
+    .nav-hidden { transform: translateY(-110%); }
+
+    /* === Language toggle === */
+    .lang-toggle { display: inline-flex; align-items: center; gap: .5rem; }
+    .lang-select { border: 1px solid #e5e7eb; border-radius: 10px; padding: .35rem .5rem; }
+
+    /* === Urgency banner === */
+    .banner {
+      position: sticky; top: 56px; z-index: 999;
+      background: var(--red); color: #fff;
+      text-align: center; padding: .55rem .8rem;
+      box-shadow: 0 6px 14px rgba(204,47,47,.25);
+      font-weight: 700;
+    }
+    .banner .countdown { font-variant-numeric: tabular-nums; margin-left: .5rem; background: rgba(255,255,255,.18); padding: .18rem .5rem; border-radius: 8px; }
+
+    /* === Panels & sections === */
+    section.panel {
+      position: relative;
+      z-index: 1;
+      background: var(--panel); border-radius: var(--radius);
+      box-shadow: var(--panel-shadow); padding: 1.2rem;
+      margin: 1.2rem auto;
     }
 
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      nav {
-        padding: 14px 20px;
-      }
+    /* === Hero === */
+    .hero {
+      display: grid; grid-template-columns: 1.2fr .8fr; gap: 1rem;
+      align-items: center; min-height: 280px;
+    }
+    .hero h1 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); color: var(--green); }
+    .hero p { color: var(--muted); margin-top: .6rem; }
+    .trust-badges { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .8rem; }
+    .badge {
+      display: inline-flex; align-items: center; gap: .4rem;
+      padding: .4rem .6rem; border: 1px solid #e5e7eb; border-radius: 10px;
+      background: #fafafa;
+    }
+    .badge:hover { box-shadow: 0 8px 18px rgba(0,0,0,.06); }
 
-      .newsletter {
-        max-width: 94%;
-      }
+    /* === Services === */
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: .8rem; }
+    .service {
+      border: 2px solid #b7e5c9; border-radius: 12px; padding: .8rem;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .service:hover { transform: translateY(-2px) rotateX(2deg); box-shadow: 0 10px 20px rgba(1,105,55,.12); }
+    .service h3 { color: var(--green); font-size: 1rem; }
 
-      .newsletter input[type='email'] {
-        width: 60%;
-        padding: 16px 20px;
-      }
+    /* === WhatsApp floating button === */
+    .whatsapp-fab {
+      position: fixed; right: 18px; bottom: 18px; z-index: 1001;
+    }
+    .whatsapp-btn {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366; border: none; cursor: pointer;
+      box-shadow: 0 10px 24px rgba(37,211,102,.35);
+      animation: pulse 2.4s infinite;
+    }
+    .whatsapp-btn svg { width: 26px; height: 26px; fill: #fff; }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,.6); }
+      50% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+    .contact-card {
+      position: absolute; right: 0; bottom: 70px;
+      width: min(300px, 80vw);
+      background: #fff; border-radius: 12px; box-shadow: var(--panel-shadow);
+      padding: .8rem; display: none;
+    }
+    .contact-card.active { display: block; }
+    .contact-card h4 { margin-bottom: .5rem; color: var(--green); font-size: 1rem; }
+    .contact-actions { display: flex; gap: .5rem; }
+    .contact-actions button {
+      flex: 1; border: 1px solid #e5e7eb; background: #f9fafb; border-radius: 999px; padding: .5rem; cursor: pointer; font-weight: 700;
+    }
+    .contact-details { margin-top: .5rem; font-size: .95rem; }
+    .contact-details .concealed { display: none; }
 
-      .newsletter button {
-        padding: 16px 20px;
-        font-size: 1em;
-      }
+    /* === Back to top === */
+    .back-to-top {
+      position: fixed; right: 18px; bottom: 90px; z-index: 1000;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--red); border: none; color: #fff; display: grid; place-items: center;
+      box-shadow: 0 10px 24px rgba(204,47,47,.28);
+      cursor: pointer; opacity: 0; pointer-events: none; transition: opacity .25s ease;
+    }
+    .back-to-top.visible { opacity: 1; pointer-events: auto; }
+    .back-to-top:hover, .back-to-top:focus-visible { background: var(--red-dark); }
 
-      .social-links {
-        margin-bottom: 50px;
-      }
+    /* === Testimonials === */
+    .testimonials-header { display: flex; align-items: center; justify-content: space-between; gap: .6rem; }
+    .carousel {
+      position: relative; overflow: hidden; border: 2px solid #b7e5c9; border-radius: 12px; margin-top: .8rem;
+    }
+    .slides { display: grid; grid-auto-flow: column; grid-auto-columns: 100%; transition: transform .6s ease; }
+    .testimonial {
+      padding: .8rem; display: grid; grid-template-columns: 56px 1fr; gap: .6rem; align-items: start;
+      opacity: 0; transform: translateY(10px);
+      transition: opacity .4s ease, transform .4s ease;
+    }
+    .testimonial.visible { opacity: 1; transform: translateY(0); }
+    .photo {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #e2e8f0 url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56"><circle cx="28" cy="28" r="28" fill="%23cde9d6"/></svg>') center/cover no-repeat;
+      border: 2px solid #b7e5c9;
+    }
+    .quote { color: #111; }
+    .name { color: var(--green); font-weight: 700; }
+    .carousel-controls { display: flex; justify-content: space-between; margin-top: .5rem; }
+    .carousel-controls button {
+      border: 1px solid #e5e7eb; background: #f9fafb; border-radius: 10px; padding: .35rem .55rem; cursor: pointer; font-weight: 700;
+    }
 
-      .social-links a {
-        font-size: 2.3em;
-      }
+    /* === Video === */
+    .video-wrap {
+      position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;
+      box-shadow: var(--panel-shadow);
+    }
+    .video-wrap iframe {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;
+    }
+
+    /* === Multi-step Form Wizard === */
+    .wizard { display: grid; gap: 1rem; }
+    .progressbar {
+      height: 8px; border-radius: 999px; background: #eef2f3; overflow: hidden;
+    }
+    .progressbar .fill { height: 100%; width: 0%; background: var(--green); transition: width .3s ease; }
+    .steps { display: grid; gap: .8rem; }
+    .step { display: none; }
+    .step.active { display: block; }
+    fieldset { border: 1px solid #e5e7eb; border-radius: 12px; padding: .8rem; }
+    legend { padding: 0 .4rem; color: var(--green); font-weight: 700; }
+    label { display: block; font-weight: 600; margin-bottom: .25rem; }
+    input[type="text"], input[type="email"], input[type="date"], input[type="number"], select, textarea {
+      width: 100%; border: 1px solid #d1d5db; border-radius: 10px; padding: .55rem; font-size: 1rem;
+    }
+    input[type="file"] { font-size: .95rem; }
+    .inline { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .6rem; }
+    .note { color: var(--muted); font-size: .9rem; }
+    .error { color: var(--red); font-weight: 700; font-size: .9rem; }
+    .wizard-controls { display: flex; justify-content: space-between; gap: .6rem; }
+    .btn {
+      border: none; border-radius: 999px; padding: .7rem 1rem; cursor: pointer; font-weight: 700;
+    }
+    .btn-primary { background: var(--green); color: #fff; box-shadow: 0 10px 24px rgba(1,105,55,.25); }
+    .btn-primary:hover, .btn-primary:focus-visible { filter: brightness(.95); }
+    .btn-secondary { background: #f9fafb; border: 1px solid #e5e7eb; }
+
+    /* === FAQ === */
+    .faq { display: grid; gap: .5rem; }
+    .faq details {
+      border: 1px solid #e5e7eb; border-radius: 12px; padding: .6rem;
+    }
+    .faq summary { font-weight: 700; cursor: pointer; outline: none; }
+    .faq summary:focus-visible { outline: 3px solid var(--green); border-radius: 8px; }
+
+    /* === Blog/News === */
+    .blog-list { display: grid; gap: .5rem; }
+    .blog-item { border-left: 4px solid var(--red); padding-left: .6rem; }
+
+    /* === Contact + Map === */
+    .map {
+      border-radius: 12px; overflow: hidden; box-shadow: var(--panel-shadow);
+      background: #eef2f3; height: 220px; display: grid; place-items: center; color: var(--muted);
+    }
+    .map img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* === Social footer === */
+    footer {
+      background: #0f172a; color: #e5e7eb; padding: 1rem 0; margin-top: 1rem;
+    }
+    .social {
+      display: flex; gap: .6rem; align-items: center; flex-wrap: wrap;
+    }
+    .social a {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 38px; height: 38px; border-radius: 50%; background: #1f2937;
+    }
+    .social a:hover, .social a:focus-visible { background: #374151; }
+    .social svg { width: 22px; height: 22px; fill: #fff; }
+
+    /* === Reveal animations (IntersectionObserver) === */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* === Sticky mobile CTA === */
+    .mobile-cta {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 1002;
+      display: none; justify-content: space-between; align-items: center;
+      padding: .6rem .9rem; background: rgba(255,255,255,.95); box-shadow: 0 -10px 18px rgba(0,0,0,.08);
+    }
+    .mobile-cta .cta-btn {
+      background: var(--red); color: #fff; border: none; border-radius: 999px; padding: .6rem 1rem; font-weight: 700;
+    }
+
+    /* === Responsive === */
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .banner { top: 52px; }
+      .mobile-cta { display: flex; }
     }
   </style>
+</head>
 
-  <!-- WhatsApp Floating Button -->
-  <div id="whatsappBtn" title="WhatsApp Chat" role="button" aria-pressed="false" tabindex="0" aria-label="Open WhatsApp chat">
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="white"><path d="M20.52 3.48a11.91 11.91 0 0 0-16.87 16.84l-1.3 4.72a.6.6 0 0 0 .7.7l4.73-1.3a11.92 11.92 0 0 0 13.04-20zM10.67 17.28l-2.4-1.15a.83.83 0 0 1-.49-.54L6.11 11a.53.53 0 0 1 .2-.62l5.46-4.2a.68.68 0 0 1 .76 0l2.21 1.65a.49.49 0 0 1 .06.77l-.51.5a.74.74 0 0 1-.48.19c-.14 0-.26 0-.38-.03a.75.75 0 0 1-.57-.47l-.51-1.17a.3.3 0 0 0-.42-.16l-2.64 2a.78.78 0 0 0-.26.55l-.06 1a.26.26 0 0 0 .34.22l1.58-.5a.36.36 0 0 1 .39.15zm8.8-5.37a.75.75 0 0 0-1 .2.77.77 0 0 0-.07.76c.44.91.14 2.1-.67 3.21a3.84 3.84 0 0 1-3.18 1.6 3.22 3.22 0 0 1-1.65-.48l-.12-.08a2.76 2.76 0 0 1-1.15-1.16 3.58 3.58 0 0 1-.24-2.09c.06-.37.07-.25-.04-.27a.77.77 0 0 0-.12-1 7.5 7.5 0 0 0-1.29.69 4.23 4.23 0 0 0-1.51 1.57s-.56 1.24-.3 2.72a4.1 4.1 0 0 0 4.11 3.35 9.3 9.3 0 0 0 2.16-.22 5.36 5.36 0 0 0 2.75-1.76c.82-1.08 1.15-2.39.82-3.18z"/></svg>
+<body>
+  <!-- Parallax decorative layers (aria-hidden for accessibility) -->
+  <div class="parallax" aria-hidden="true">
+    <div class="leaf" style="top: 8%; left: 6%;"></div>
+    <div class="leaf" style="top: 26%; left: 82%;"></div>
+    <div class="leaf" style="top: 60%; left: 12%;"></div>
+    <div class="leaf" style="top: 78%; left: 70%;"></div>
   </div>
 
-  <!-- Contact Reveal -->
-  <div id="contactReveal" aria-live="polite" aria-atomic="true" style="display:none;position:fixed;bottom:100px;right:25px;width:300px;background:white;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,0.3);z-index:11001;padding:15px;">
-    <button id="chatBtn" style="background:#25d366;color:white;border:none;padding:10px 20px;border-radius:10px;margin-right:12px;cursor:pointer;">Chat with us</button>
-    <button id="complainBtn" style="background:#ff4757;color:white;border:none;padding:10px 20px;border-radius:10px;cursor:pointer;">Make a Complaint</button>
-    <div id="chatInfo" style="margin-top:20px;display:none;font-weight:600;">Phone: +1 656 200 7384<br>Email: catherineglocklin@gmail.com</div>
-    <div id="complainInfo" style="margin-top:20px;display:none;font-weight:600;">Send your complaint to: complaints@civajs.com</div>
+  <!-- Accessible skip link -->
+  <a href="#main" class="container" style="position:absolute;left:-9999px;top:-9999px;" aria-label="Skip to main content">Skip to main</a>
+
+  <!-- Sticky navbar -->
+  <nav role="navigation" aria-label="Primary">
+    <div class="container nav-inner">
+      <div class="brand">
+        <!-- Visual placeholder logo (SVG data URI; swap with branded asset later) -->
+        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><rect width='100%' height='100%' rx='10' fill='%23ffffff'/><path d='M32 6l5 9 24-3-16 18 10 20-20-8-10 20-10-20-20 8 10-20-16-18 24 3 5-9z' fill='%23cc2f2f'/></svg>" alt="CIVAJS placeholder logo" />
+        <span class="title" data-i18n="brand">CIVAJS — Canada Immigration Visa and Jobs Support</span>
+      </div>
+
+      <div class="lang-toggle" aria-label="Language toggle">
+        <label for="globalLang" class="sr-only" style="position:absolute;left:-9999px;">Select language</label>
+        <select id="globalLang" class="lang-select" aria-label="Select language">
+          <option value="en" selected>English</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
+
+      <button class="call-btn" aria-label="Call now to book consultation" data-reveal="phone" id="navCallBtn">Call now</button>
+    </div>
+  </nav>
+
+  <!-- Urgency banner with 48-hour countdown -->
+  <div class="banner" role="status" aria-live="polite">
+    <span data-i18n="banner">Book Your FREE Consultation — Limited Slots Available</span>
+    <span class="countdown" aria-label="Countdown timer">48:00:00</span>
+  </div>
+
+  <main id="main" class="container" tabindex="-1">
+    <!-- Hero -->
+    <section class="panel hero reveal" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title" data-i18n="heroTitle">Personalized expert support for Canadian immigration and job assistance</h1>
+        <p data-i18n="heroSubtitle">From visa applications to job search support, we guide you with clarity, confidentiality, and care—every step of the way.</p>
+        <div class="trust-badges" aria-label="Trust badges">
+          <div class="badge" title="Privacy assured">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#016937" d="M12 1l9 5v6c0 5-3.8 9.7-9 11-5.2-1.3-9-6-9-11V6l9-5z"/></svg>
+            <span data-i18n="badgePrivacy">Privacy assured</span>
+          </div>
+          <div class="badge" title="Credential verified">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#016937" d="M12 2l3 7h7l-5.5 4.5L18 21l-6-3.5L6 21l1.5-7.5L2 9h7z"/></svg>
+            <span data-i18n="badgeCredential">Credential verified</span>
+          </div>
+          <div class="badge" title="Confidential support">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#016937" d="M12 17a2 2 0 0 0 2-2V9a2 2 0 0 0-4 0v6a2 2 0 0 0 2 2zm6-6h-1V9a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2z"/></svg>
+            <span data-i18n="badgeConfidential">Confidential support</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <section class="panel" aria-labelledby="services-title" style="margin:0;">
+          <h2 id="services-title" style="font-size:1.2rem;color:#016937;" data-i18n="servicesTitle">Services offered</h2>
+          <div class="services">
+            <div class="service" aria-label="Visa Application Assistance">
+              <h3 data-i18n="svcVisa">Visa Application Assistance</h3>
+              <p class="note" data-i18n="svcVisaFr">French: Assistance à la demande de visa</p>
+            </div>
+            <div class="service" aria-label="Job Search Support">
+              <h3 data-i18n="svcJob">Job Search Support</h3>
+              <p class="note" data-i18n="svcJobFr">French: Soutien à la recherche d'emploi</p>
+            </div>
+            <div class="service" aria-label="Document Preparation and Review">
+              <h3 data-i18n="svcDocs">Document Preparation and Review</h3>
+              <p class="note" data-i18n="svcDocsFr">French: Préparation et révision des documents</p>
+            </div>
+            <div class="service" aria-label="Interview Coaching">
+              <h3 data-i18n="svcInterview">Interview Coaching</h3>
+              <p class="note" data-i18n="svcInterviewFr">French: Coaching d'entretien</p>
+            </div>
+            <div class="service" aria-label="Legal Advisory">
+              <h3 data-i18n="svcLegal">Legal Advisory</h3>
+              <p class="note" data-i18n="svcLegalFr">French: Consultation juridique</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Testimonials with language selector & carousel -->
+    <section class="panel reveal" aria-labelledby="testimonials-title">
+      <div class="testimonials-header">
+        <h2 id="testimonials-title" style="color:#016937;" data-i18n="testimonialsTitle">Client testimonials</h2>
+        <label for="lang" class="sr-only" style="position:absolute;left:-9999px;">Select language</label>
+        <select id="lang" class="lang-select" aria-label="Select language for testimonials">
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
+
+      <div class="carousel" role="region" aria-label="Testimonials carousel">
+        <div class="slides" id="slides" aria-live="polite">
+          <!-- English (default) -->
+          <article class="testimonial" data-lang="en">
+            <div class="photo" aria-hidden="true" loading="lazy"></div>
+            <div>
+              <p class="quote">CIVAJS made my study permit process smooth and transparent. I always knew what was next.</p>
+              <p class="name">— Amina K.</p>
+            </div>
+          </article>
+          <article class="testimonial" data-lang="en">
+            <div class="photo" aria-hidden="true" loading="lazy"></div>
+            <div>
+              <p class="quote">Their job search guidance helped me land interviews in two weeks. Highly professional.</p>
+              <p class="name">— Diego R.</p>
+            </div>
+          </article>
+          <article class="testimonial" data-lang="en">
+            <div class="photo" aria-hidden="true" loading="lazy"></div>
+            <div>
+              <p class="quote">The document review saved me time and avoided costly mistakes. Clear feedback, fast turnaround.</p>
+              <p class="name">— Chen L.</p>
+            </div>
+          </article>
+
+          <!-- Français -->
+          <article class="testimonial" data-lang="fr">
+            <div class="photo" aria-hidden="true" loading="lazy"></div>
+            <div>
+              <p class="quote">CIVAJS a rendu ma demande de permis d'études fluide et transparente. Service impeccable.</p>
+              <p class="name">— Samira B.</p>
+            </div>
+          </article>
+          <article class="testimonial" data-lang="fr">
+            <div class="photo" aria-hidden="true" loading="lazy"></div>
+            <div>
+              <p class="quote">Leur soutien pour la recherche d'emploi m'a aidé à décrocher des entretiens rapidement.</p>
+              <p class="name">— Julien P.</p>
+            </div>
+          </article>
+
+          <!-- Español -->
+          <article class="testimonial" data-lang="es">
+            <div class="photo" aria-hidden="true" loading="lazy"></div>
+            <div>
+              <p class="quote">Profesionales y atentos. Revisaron mis documentos con detalle y me guiaron en cada paso.</p>
+              <p class="name">— Laura M.</p>
+            </div>
+          </article>
+          <article class="testimonial" data-lang="es">
+            <div class="photo" aria-hidden="true" loading="lazy"></div>
+            <div>
+              <p class="quote">El coaching para entrevistas elevó mi confianza y mejoró mis resultados.</p>
+              <p class="name">— Andrés F.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="carousel-controls" aria-label="Carousel controls">
+          <button type="button" id="prev" aria-label="Previous testimonial">Prev</button>
+          <button type="button" id="next" aria-label="Next testimonial">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Immigration video (lazy-loaded official IRCC video) -->
+    <section class="panel reveal" aria-labelledby="video-title">
+      <h2 id="video-title" style="color:#016937;" data-i18n="videoTitle">Official Canadian immigration information video</h2>
+      <p class="note" data-i18n="videoNote">Embedded for educational purposes. Content remains the property of its respective publisher.</p>
+      <div class="video-wrap" role="region" aria-label="Responsive video container">
+        <iframe title="IRCC informational video"
+                data-src="https://www.youtube.com/embed/8h8Z9z0J7hM"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Client intake & application form (wizard) -->
+    <section class="panel reveal" aria-labelledby="form-title">
+      <h2 id="form-title" style="color:#016937;" data-i18n="formTitle">Client intake and qualification form</h2>
+      <p class="note" id="wizard-instructions" aria-live="polite" data-i18n="formInstructions">
+        Use Tab/Shift+Tab to move between fields. Use Enter to proceed, or use the Next/Back buttons. All required fields must be completed.
+      </p>
+
+      <div class="wizard" role="form" aria-describedby="wizard-instructions">
+        <div class="progressbar" aria-hidden="true"><div class="fill" id="progressFill"></div></div>
+
+        <form id="intakeForm" novalidate>
+          <div class="steps">
+            <!-- Step 1: Personal details -->
+            <div class="step active" data-step="1">
+              <fieldset>
+                <legend data-i18n="step1">Personal details</legend>
+                <div class="inline">
+                  <div>
+                    <label for="fullName" data-i18n="labelFullName">Full name</label>
+                    <input id="fullName" name="fullName" type="text" required autocomplete="name" />
+                  </div>
+                  <div>
+                    <label for="email" data-i18n="labelEmail">Email address</label>
+                    <input id="email" name="email" type="email" required autocomplete="email" />
+                  </div>
+                  <div>
+                    <label for="phone" data-i18n="labelPhone">Phone number</label>
+                    <input id="phone" name="phone" type="text" required inputmode="tel" autocomplete="tel" />
+                  </div>
+                </div>
+                <div class="inline">
+                  <div>
+                    <label for="dob" data-i18n="labelDob">Date of birth (must be over 18)</label>
+                    <input id="dob" name="dob" type="date" required />
+                    <div id="dobError" class="error" role="alert" aria-live="polite" style="display:none;" data-i18n="dobError">Applicant must be at least 18 years old.</div>
+                  </div>
+                  <div>
+                    <label for="passport" data-i18n="labelPassport">Passport number</label>
+                    <input id="passport" name="passport" type="text" required />
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <!-- Step 2: Preferences -->
+            <div class="step" data-step="2">
+              <fieldset>
+                <legend data-i18n="step2">Visa & job preferences</legend>
+                <div class="inline">
+                  <div>
+                    <label for="visaType" data-i18n="labelVisaType">Visa or immigration target type</label>
+                    <select id="visaType" name="visaType" required>
+                      <option value="" data-i18n="selectDefault">Select...</option>
+                      <option data-i18n="optStudy">Study Permit</option>
+                      <option data-i18n="optWork">Work Permit</option>
+                      <option data-i18n="optEE">Express Entry</option>
+                      <option data-i18n="optPNP">Provincial Nominee Program</option>
+                      <option data-i18n="optVisitor">Visitor Visa</option>
+                      <option data-i18n="optFamily">Family Sponsorship</option>
+                      <option data-i18n="optOther">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="expectedPayment" data-i18n="labelPayment">Expected payment amount</label>
+                    <select id="expectedPayment" name="expectedPayment" required>
+                      <option value="" data-i18n="selectDefault">Select...</option>
+                      <option>$0–$499</option>
+                      <option>$500–$999</option>
+                      <option>$1,000–$2,499</option>
+                      <option>$2,500+</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="interests" data-i18n="labelInterests">Visa/job interests (details)</label>
+                  <textarea id="interests" name="interests" rows="4" placeholder="Tell us about your goals, timeline, and preferred province..." required></textarea>
+                </div>
+
+                <div>
+                  <label for="cv" data-i18n="labelCV">Optional CV upload</label>
+                  <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" />
+                  <p class="note" data-i18n="cvNote">Uploading a CV can improve the speed of procedure by clarifying your experience.</p>
+                </div>
+
+                <div>
+                  <label for="otherDest" data-i18n="labelOtherDest">Other migration destinations (besides Canada)</label>
+                  <input id="otherDest" name="otherDest" type="text" placeholder="e.g., Australia, UK, Germany" />
+                </div>
+
+                <div class="checkbox">
+                  <input id="over18" name="over18" type="checkbox" required />
+                  <label for="over18" data-i18n="labelOver18">I confirm I am over 18.</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <!-- Step 3: Legal & submit -->
+            <div class="step" data-step="3">
+              <fieldset>
+                <legend data-i18n="step3">Legal and confidentiality</legend>
+                <p class="note" data-i18n="legalNote">We provide independent advisory support. We are not affiliated with or endorsed by any government agency. Your data is handled with strict confidentiality.</p>
+              </fieldset>
+
+              <div class="wizard-controls">
+                <button type="button" class="btn btn-secondary" id="backBtn3" data-i18n="back">Back</button>
+                <button type="submit" class="btn btn-primary" id="submitBtn" aria-label="Submit application" data-i18n="submit">Submit application</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizard controls (for steps 1 and 2) -->
+          <div class="wizard-controls" id="wizardNav">
+            <button type="button" class="btn btn-secondary" id="backBtn" data-i18n="back">Back</button>
+            <button type="button" class="btn btn-primary" id="nextBtn" data-i18n="next">Next</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="panel reveal" aria-labelledby="faq-title">
+      <h2 id="faq-title" style="color:#016937;" data-i18n="faqTitle">Frequently asked questions</h2>
+      <div class="faq" role="list">
+        <details>
+          <summary role="button" aria-expanded="false" data-i18n="faq1Q">Do you guarantee visa approvals?</summary>
+          <div>
+            <p data-i18n="faq1A">No. Decisions are made by immigration authorities. We provide guidance, preparation, and support to improve application quality.</p>
+          </div>
+        </details>
+        <details>
+          <summary role="button" aria-expanded="false" data-i18n="faq2Q">Do you offer French and Spanish support?</summary>
+          <div>
+            <p data-i18n="faq2A">Yes. We can provide documentation and client support in English, French, and Spanish.</p>
+          </div>
+        </details>
+        <details>
+          <summary role="button" aria-expanded="false" data-i18n="faq3Q">How long does the process take?</summary>
+          <div>
+            <p data-i18n="faq3A">Timelines vary by application type and official processing. We’ll help you plan and prepare efficiently.</p>
+          </div>
+        </details>
+        <details>
+          <summary role="button" aria-expanded="false" data-i18n="faq4Q">Will my data be shared?</summary>
+          <div>
+            <p data-i18n="faq4A">We prioritize confidentiality. Your information is used strictly for advisory services and not shared without consent.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Blog/News -->
+    <section class="panel reveal" aria-labelledby="blog-title">
+      <h2 id="blog-title" style="color:#016937;" data-i18n="blogTitle">Latest immigration tips & news</h2>
+      <div class="blog-list" role="list">
+        <article class="blog-item" role="listitem">
+          <h3 data-i18n="blog1">Understanding Express Entry basics</h3>
+          <p class="note" data-i18n="blog1Note">EN/FR: Learn core eligibility factors, CRS scoring, and profile optimization.</p>
+        </article>
+        <article class="blog-item" role="listitem">
+          <h3 data-i18n="blog2">How to prepare a strong study plan</h3>
+          <p class="note" data-i18n="blog2Note">EN/ES: Build a compelling narrative, financials, and program alignment.</p>
+        </article>
+        <article class="blog-item" role="listitem">
+          <h3 data-i18n="blog3">Work permit pathways overview</h3>
+          <p class="note" data-i18n="blog3Note">EN: Employer sponsorship, LMIA basics, and alternatives.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="panel reveal" aria-labelledby="contact-title">
+      <h2 id="contact-title" style="color:#016937;" data-i18n="contactTitle">Contact and location</h2>
+      <p class="note" data-i18n="contactNote">Direct phone and email are concealed by default to protect privacy. Use the WhatsApp card to reveal contact options.</p>
+
+      <div class="inline">
+        <div>
+          <h3 style="font-size:1rem;color:#016937;" data-i18n="embassyTitle">Embassy address (New York, USA)</h3>
+          <p>466 Lexington Ave, New York, NY 10017, USA</p>
+          <a href="https://maps.google.com/?q=466+Lexington+Ave,+New+York,+NY+10017" target="_blank" rel="noopener" aria-label="Open Google Maps for embassy address">
+            <div class="map">
+              <!-- Realistic static map placeholder (SVG data URI) -->
+              <img alt="Static Map Preview (click to open full map)" loading="lazy"
+                   src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='300'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%23eef2f3'/><stop offset='1' stop-color='%23e2e8f0'/></linearGradient></defs><rect width='100%' height='100%' fill='url(%23g)'/><circle cx='450' cy='140' r='8' fill='%23cc2f2f'/><text x='20' y='40' font-size='18' fill='%23016937'>466 Lexington Ave, New York</text><text x='20' y='70' font-size='14' fill='%236b7280'>Static Map Placeholder — click to open</text></svg>">
+            </div>
+          </a>
+        </div>
+        <div>
+          <h3 style="font-size:1rem;color:#016937;" data-i18n="newsletterTitle">Newsletter</h3>
+          <form id="newsletterForm" aria-label="Newsletter subscription" novalidate>
+            <label for="newsletterEmail" data-i18n="newsletterLabel">Email address</label>
+            <input id="newsletterEmail" type="email" required />
+            <button type="submit" class="btn btn-primary" style="margin-top:.5rem;" data-i18n="newsletterBtn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Government disclaimer -->
+    <section class="panel reveal" aria-labelledby="gov-title">
+      <h2 id="gov-title" style="color:#016937;" data-i18n="govTitle">Important legal disclaimer</h2>
+      <p data-i18n="govText">We are an independent advisory service and are not affiliated with, endorsed by, or approved by any government. Use of our services does not influence official decisions. We uphold confidentiality and ethical guidance at all times.</p>
+    </section>
+  </main>
+
+  <!-- Social footer with official IRCC profiles -->
+  <footer role="contentinfo" aria-label="Footer">
+    <div class="container">
+      <div class="social" aria-label="Social media links">
+        <a href="https://www.facebook.com/CitCanada" aria-label="Facebook (IRCC official)" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.3V12h2.3V9.7c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .2 2 .2v2.2h-1.2c-1.2 0-1.6.7-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+        <a href="https://twitter.com/CitImmCanada" aria-label="Twitter/X (IRCC official)" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.9-2.37 8.59 8.59 0 0 1-2.72 1.04A4.29 4.29 0 0 0 12 8.93a12.18 12.18 0 0 1-8.84-4.48 4.29 4.29 0 0 0 1.32 5.73 4.25 4.25 0 0 1-1.94-.54v.05a4.29 4.29 0 0 0 3.44 4.2 4.3 4.3 0 0 1-1.93.07 4.29 4.29 0 0 0 4 2.96A8.61 8.61 0 0 1 2 18.58 12.12 12.12 0 0 0 8.62 20c7.4 0 11.45-6.13 11.45-11.45 0-.18-.01-.36-.02-.54A8.18 8.18 0 0 0 22.46 6z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/immigration-refugees-and-citizenship-canada" aria-label="LinkedIn (IRCC official)" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3 8.98h4v12H3v-12zM9 8.98h3.83v1.64h.05c.53-1 1.82-2.06 3.75-2.06 4 0 4.73 2.64 4.73 6.07v6.35h-4v-5.63c0-1.34-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.73H9v-12z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/CitImmCanada" aria-label="YouTube (IRCC official)" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a4.6 4.6 0 0 0-3.2-3.2C18.1 2.5 12 2.5 12 2.5s-6.1 0-8.3.5A4.6 4.6 0 0 0 .5 6.2C0 8.4 0 12 0 12s0 3.6.5 5.8a4.6 4.6 0 0 0 3.2 3.2c2.2.5 8.3.5 8.3.5s6.1 0 8.3-.5a4.6 4.6 0 0 0 3.2-3.2c.5-2.2.5-5.8.5-5.8s0-3.6-.5-5.8zM9.7 15.5V8.5L15.5 12l-5.8 3.5z"/></svg>
+        </a>
+      </div>
+      <p class="note" style="margin-top:.6rem;">© CIVAJS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button & contact reveal card -->
+  <div class="whatsapp-fab" aria-live="polite">
+    <button class="whatsapp-btn" aria-label="Open WhatsApp contact options" id="waBtn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A10 10 0 0 0 3.48 20.52L2 22l1.6-.42A10 10 0 1 0 20.52 3.48zM12 19a7 7 0 0 1-6.17-10.2l.4-.7.7.4A7 7 0 1 0 12 19zm-1.5-4.6c1.1.7 2.2 1.1 3.3 1.2.5 0 .9-.2 1.2-.7l.2-.3c.1-.2 0-.5-.2-.6l-1.1-.6c-.2-.1-.5-.1-.6.1l-.3.4c-.1.2-.3.2-.5.1a5.7 5.7 0 0 1-3-2.6c-.1-.2 0-.4.1-.5l.3-.3c.2-.2.2-.5.1-.7l-.6-1c-.1-.2-.4-.3-.6-.2l-.4.2c-.5.2-.8.7-.8 1.2.1 1.3.8 2.7 2.1 3.9z"/></svg>
+    </button>
+
+    <div class="contact-card" id="contactCard" role="dialog" aria-modal="false" aria-labelledby="contact-title-card">
+      <h4 id="contact-title-card" data-i18n="contactCardTitle">Contact options</h4>
+      <div class="contact-actions">
+        <button type="button" id="chatBtn" aria-controls="chatDetails" data-i18n="chatBtn">Chat with us</button>
+        <button type="button" id="complaintBtn" aria-controls="complaintDetails" data-i18n="complaintBtn">Make a complaint</button>
+      </div>
+      <div class="contact-details">
+        <div id="chatDetails" class="concealed">
+          <p><strong>Phone:</strong> +1 656 200 7384</p>
+          <p><strong>Email:</strong> catherineglocklin@gmail.com</p>
+          <p class="note">Previously listed: stacy_cooper@myyahoo.com</p>
+        </div>
+        <div id="complaintDetails" class="concealed">
+          <p><strong>Complaints:</strong> complaints@civajs.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-8 8h5v8h6v-8h5z" fill="#fff"/></svg>
+  </button>
+
+  <!-- Sticky mobile CTA -->
+  <div class="mobile-cta" aria-hidden="false">
+    <span data-i18n="mobileCTA">Book Free Consultation</span>
+    <button class="cta-btn" id="mobileCTA" data-i18n="ctaBtn">Get started</button>
   </div>
 
   <script>
-    // WhatsApp and contact reveal toggle
-    const whatsappBtn = document.getElementById("whatsappBtn");
-    const contactReveal = document.getElementById("contactReveal");
-    const chatBtn = document.getElementById("chatBtn");
-    const complainBtn = document.getElementById("complainBtn");
-    const chatInfo = document.getElementById("chatInfo");
-    const complainInfo = document.getElementById("complainInfo");
-
-whatsappBtn.addEventListener('click', () => {
-      if (contactReveal.style.display === 'block') {
-        contactReveal.style.display = 'none';
-        whatsappBtn.setAttribute('aria-pressed','false');
-      } else {
-        contactReveal.style.display = 'block';
-        whatsappBtn.setAttribute('aria-pressed','true');
+    // IntersectionObserver reveals
+    const observer = new IntersectionObserver((entries)=> {
+      for (const entry of entries) {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       }
-    });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    chatBtn.addEventListener('click', () => {
-      chatInfo.style.display = 'block';
-      complainInfo.style.display = 'none';
-    });
+    // Lazy-load YouTube iframe when in view
+    const iframe = document.querySelector('.video-wrap iframe');
+    const vidObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && iframe.dataset.src) {
+          iframe.src = iframe.dataset.src;
+          iframe.removeAttribute('data-src');
+          vidObs.disconnect();
+        }
+      });
+    }, { threshold: 0.25 });
+    vidObs.observe(iframe);
 
-    complainBtn.addEventListener('click', () => {
-      chatInfo.style.display = 'none';
-      complainInfo.style.display = 'block';
-    });
-
-    // Animated sticky navbar on scroll
-    let lastScrollY = window.pageYOffset;
-    const nav = document.querySelector('nav');
-
+    // Parallax motion
+    const leaves = Array.from(document.querySelectorAll('.leaf'));
     window.addEventListener('scroll', () => {
-      const currentScrollY = window.pageYOffset;
-      if (currentScrollY > lastScrollY) {
-        nav.style.top = '-90px'; // hide nav on scroll down
-      } else {
-        nav.style.top = '0';
-      }
-      lastScrollY = currentScrollY;
+      const y = window.scrollY;
+      leaves.forEach((leaf, i) => {
+        const speed = (i % 2 === 0) ? 0.08 : 0.14;
+        const xShift = (i % 2 === 0) ? -0.05 : 0.06;
+        leaf.style.transform = `translate3d(${y * xShift}px, ${y * speed}px, 0)`;
+      });
     });
 
-    // Scroll top button
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-    window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 400) {
-        scrollTopBtn.style.display = 'block';
-      } else {
-        scrollTopBtn.style.display = 'none';
-      }
-    });
+    // Navbar hide/show on scroll
+    (function() {
+      let lastY = window.scrollY;
+      const nav = document.querySelector('nav[role="navigation"]');
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        if (y > lastY && y > 50) { nav.classList.add('nav-hidden'); }
+        else { nav.classList.remove('nav-hidden'); }
+        lastY = y;
+      });
+    })();
 
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    // Urgency countdown (48-hour rolling cycle)
+    (function() {
+      const el = document.querySelector('.countdown');
+      const cycleMs = 48 * 60 * 60 * 1000;
+      function tick() {
+        const now = Date.now();
+        const remain = cycleMs - (now % cycleMs);
+        const h = Math.floor(remain / (60*60*1000));
+        const m = Math.floor((remain % (60*60*1000)) / (60*1000));
+        const s = Math.floor((remain % (60*1000)) / 1000);
+        el.textContent = String(h).padStart(2,'0') + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+
+    // WhatsApp card toggle and reveal behavior
+    (function() {
+      const waBtn = document.getElementById('waBtn');
+      const card = document.getElementById('contactCard');
+      const chatBtn = document.getElementById('chatBtn');
+      const complaintBtn = document.getElementById('complaintBtn');
+      const chatDetails = document.getElementById('chatDetails');
+      const complaintDetails = document.getElementById('complaintDetails');
+      const callBtn = document.getElementById('navCallBtn');
+      const mobileCTA = document.getElementById('mobileCTA');
+
+      function openChat() {
+        card.classList.add('active');
+        chatDetails.classList.remove('concealed');
+        complaintDetails.classList.add('concealed');
+      }
+
+      waBtn.addEventListener('click', () => {
+        card.classList.toggle('active');
+        if (!card.classList.contains('active')) {
+          chatDetails.classList.add('concealed');
+          complaintDetails.classList.add('concealed');
+        }
+      });
+      chatBtn.addEventListener('click', openChat);
+      complaintBtn.addEventListener('click', () => {
+        complaintDetails.classList.remove('concealed');
+        chatDetails.classList.add('concealed');
+      });
+      callBtn.addEventListener('click', openChat);
+      mobileCTA.addEventListener('click', openChat);
+
+      document.addEventListener('click', (e) => {
+        if (!card.contains(e.target) && !waBtn.contains(e.target) && !callBtn.contains(e.target) && !mobileCTA.contains(e.target)) {
+          card.classList.remove('active');
+          chatDetails.classList.add('concealed');
+          complaintDetails.classList.add('concealed');
+        }
+      });
+    })();
+
+    // Back-to-top visibility + smooth scroll
+    (function() {
+      const btn = document.getElementById('backToTop');
+      const toggle = () => {
+        if (window.scrollY > 400) btn.classList.add('visible');
+        else btn.classList.remove('visible');
+      }
+      window.addEventListener('scroll', toggle);
+      toggle();
+      btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    })();
+
+    // Testimonials language toggle + carousel rotation + fade
+    (function() {
+      const select = document.getElementById('lang');
+      const slides = document.getElementById('slides');
+      const items = Array.from(slides.children);
+      let activeLang = 'en';
+      let index = 0;
+      let interval = null;
+
+      function setVisible(index) {
+        const visible = items.filter(it => it.dataset.lang === activeLang);
+        visible.forEach((it, i) => {
+          if (i === index) it.classList.add('visible');
+          else it.classList.remove('visible');
+        });
+      }
+
+      function applyLang(lang) {
+        activeLang = lang;
+        index = 0;
+        const filtered = items.filter(it => it.dataset.lang === activeLang);
+        const total = filtered.length;
+        slides.style.transform = `translateX(0%)`;
+        items.forEach(it => it.style.display = (it.dataset.lang === activeLang ? 'grid' : 'none'));
+        slides.style.gridAutoColumns = '100%';
+        setVisible(index);
+        if (interval) clearInterval(interval);
+        interval = setInterval(() => {
+          index = (index + 1) % total;
+          slides.style.transform = `translateX(-${index * 100}%)`;
+          setVisible(index);
+        }, 8000);
+      }
+
+      document.getElementById('prev').addEventListener('click', () => {
+        const visible = items.filter(it => it.dataset.lang === activeLang);
+        index = (index - 1 + visible.length) % visible.length;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+        setVisible(index);
+      });
+      document.getElementById('next').addEventListener('click', () => {
+        const visible = items.filter(it => it.dataset.lang === activeLang);
+        index = (index + 1) % visible.length;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+        setVisible(index);
+      });
+
+      select.addEventListener('change', (e) => applyLang(e.target.value));
+      applyLang(activeLang);
+    })();
+
+    // Wizard navigation and validation
+    (function() {
+      const form = document.getElementById('intakeForm');
+      const steps = Array.from(form.querySelectorAll('.step'));
+      const backBtn = document.getElementById('backBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const backBtn3 = document.getElementById('backBtn3');
+      const progressFill = document.getElementById('progressFill');
+      const dobInput = document.getElementById('dob');
+      const dobError = document.getElementById('dobError');
+
+      let current = 0;
+      const total = steps.length;
+
+      function updateProgress() {
+        const pct = Math.round(((current + 1) / total) * 100);
+        progressFill.style.width = pct + '%';
+      }
+
+      function showStep(i) {
+        steps.forEach((s, idx) => s.classList.toggle('active', idx === i));
+        current = i;
+        updateProgress();
+        // Toggle main wizard nav (hidden on last step where submit/back is inside)
+        document.getElementById('wizardNav').style.display = (current === total - 1) ? 'none' : 'flex';
+      }
+
+      function isOver18(dateStr) {
+        const dob = new Date(dateStr);
+        if (Number.isNaN(dob.getTime())) return false;
+        const today = new Date();
+        const age = today.getFullYear() - dob.getFullYear();
+        const m = today.getMonth() - dob.getMonth();
+        const adj = (m < 0 || (m === 0 && today.getDate() < dob.getDate())) ? 1 : 0;
+        return (age - adj) >= 18;
+      }
+
+      function validateStep(i) {
+        // For step 0: require personal fields and age check
+        // For step 1: require visaType, expectedPayment, interests, over18
+        // Step 2 has no required fields except overall
+        if (i === 0) {
+          const fields = ['fullName','email','phone','dob','passport'].map(id => document.getElementById(id));
+          for (const f of fields) { if (!f.checkValidity() || !f.value) return false; }
+          if (!isOver18(dobInput.value)) {
+            dobError.style.display = 'block';
+            dobInput.focus();
+            return false;
+          } else {
+            dobError.style.display = 'none';
+          }
+          return true;
+        }
+        if (i === 1) {
+          const fields = ['visaType','expectedPayment','interests','over18'].map(id => document.getElementById(id));
+          for (const f of fields) {
+            if (f.type === 'checkbox') { if (!f.checked) return false; }
+            else if (!f.checkValidity() || !f.value) return false;
+          }
+          return true;
+        }
+        return true;
+      }
+
+      backBtn.addEventListener('click', () => { if (current > 0) showStep(current - 1); });
+      nextBtn.addEventListener('click', () => { if (validateStep(current)) showStep(current + 1); });
+      backBtn3.addEventListener('click', () => { showStep(1); });
+
+      // Keyboard-friendly: Enter to go next if not submit; ArrowLeft/Right for nav
+      form.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const activeInputs = steps[current].querySelectorAll('input, select, textarea');
+          const lastFocused = Array.from(activeInputs).includes(document.activeElement);
+          // Only proceed on Enter if focus is not inside a textarea to prevent accidental submits
+          if (document.activeElement.tagName !== 'TEXTAREA') {
+            e.preventDefault();
+            if (current < total - 1) {
+              if (validateStep(current)) showStep(current + 1);
+            }
+          }
+        } else if (e.key === 'ArrowRight') {
+          e.preventDefault(); if (current < total - 1 && validateStep(current)) showStep(current + 1);
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault(); if (current > 0) showStep(current - 1);
+        }
+      });
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!form.reportValidity()) return;
+        alert("Thank you! Your application was received. We'll email a confirmation and next steps shortly.");
+        form.reset();
+        // Reset wizard
+        showStep(0);
+      });
+
+      showStep(0);
+    })();
+
+    // Newsletter subscription
+    (function() {
+      const form = document.getElementById('newsletterForm');
+      const email = document.getElementById('newsletterEmail');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!email.value || !email.checkValidity()) {
+          alert("Please enter a valid email address.");
+          email.focus();
+          return;
+        }
+        alert("Subscription confirmed! Please check your inbox for a welcome message.");
+        form.reset();
+      });
+    })();
+
+    // Global language toggle (EN/FR/ES) for key strings
+    (function() {
+      const dict = {
+        en: {
+          brand: "CIVAJS — Canada Immigration Visa and Jobs Support",
+          banner: "Book Your FREE Consultation — Limited Slots Available",
+          heroTitle: "Personalized expert support for Canadian immigration and job assistance",
+          heroSubtitle: "From visa applications to job search support, we guide you with clarity, confidentiality, and care—every step of the way.",
+          badgePrivacy: "Privacy assured",
+          badgeCredential: "Credential verified",
+          badgeConfidential: "Confidential support",
+          servicesTitle: "Services offered",
+          svcVisa: "Visa Application Assistance",
+          svcVisaFr: "French: Assistance à la demande de visa",
+          svcJob: "Job Search Support",
+          svcJobFr: "French: Soutien à la recherche d'emploi",
+          svcDocs: "Document Preparation and Review",
+          svcDocsFr: "French: Préparation et révision des documents",
+          svcInterview: "Interview Coaching",
+          svcInterviewFr: "French: Coaching d'entretien",
+          svcLegal: "Legal Advisory",
+          svcLegalFr: "French: Consultation juridique",
+          testimonialsTitle: "Client testimonials",
+          videoTitle: "Official Canadian immigration information video",
+          videoNote: "Embedded for educational purposes. Content remains the property of its respective publisher.",
+          formTitle: "Client intake and qualification form",
+          formInstructions: "Use Tab/Shift+Tab to move between fields. Use Enter to proceed, or use the Next/Back buttons. All required fields must be completed.",
+          step1: "Personal details",
+          labelFullName: "Full name",
+          labelEmail: "Email address",
+          labelPhone: "Phone number",
+          labelDob: "Date of birth (must be over 18)",
+          dobError: "Applicant must be at least 18 years old.",
+          labelPassport: "Passport number",
+          step2: "Visa & job preferences",
+          labelVisaType: "Visa or immigration target type",
+          selectDefault: "Select...",
+          optStudy: "Study Permit",
+          optWork: "Work Permit",
+          optEE: "Express Entry",
+          optPNP: "Provincial Nominee Program",
+          optVisitor: "Visitor Visa",
+          optFamily: "Family Sponsorship",
+          optOther: "Other",
+          labelPayment: "Expected payment amount",
+          labelInterests: "Visa/job interests (details)",
+          labelCV: "Optional CV upload",
+          cvNote: "Uploading a CV can improve the speed of procedure by clarifying your experience.",
+          labelOtherDest: "Other migration destinations (besides Canada)",
+          labelOver18: "I confirm I am over 18.",
+          step3: "Legal and confidentiality",
+          legalNote: "We provide independent advisory support. We are not affiliated with or endorsed by any government agency. Your data is handled with strict confidentiality.",
+          back: "Back",
+          next: "Next",
+          submit: "Submit application",
+          faqTitle: "Frequently asked questions",
+          faq1Q: "Do you guarantee visa approvals?",
+          faq1A: "No. Decisions are made by immigration authorities. We provide guidance, preparation, and support to improve application quality.",
+          faq2Q: "Do you offer French and Spanish support?",
+          faq2A: "Yes. We can provide documentation and client support in English, French, and Spanish.",
+          faq3Q: "How long does the process take?",
+          faq3A: "Timelines vary by application type and official processing. We’ll help you plan and prepare efficiently.",
+          faq4Q: "Will my data be shared?",
+          faq4A: "We prioritize confidentiality. Your information is used strictly for advisory services and not shared without consent.",
+          blogTitle: "Latest immigration tips & news",
+          blog1: "Understanding Express Entry basics",
+          blog1Note: "EN/FR: Learn core eligibility factors, CRS scoring, and profile optimization.",
+          blog2: "How to prepare a strong study plan",
+          blog2Note: "EN/ES: Build a compelling narrative, financials, and program alignment.",
+          blog3: "Work permit pathways overview",
+          blog3Note: "EN: Employer sponsorship, LMIA basics, and alternatives.",
+          contactTitle: "Contact and location",
+          contactNote: "Direct phone and email are concealed by default to protect privacy. Use the WhatsApp card to reveal contact options.",
+          embassyTitle: "Embassy address (New York, USA)",
+          newsletterTitle: "Newsletter",
+          newsletterLabel: "Email address",
+          newsletterBtn: "Subscribe",
+          govTitle: "Important legal disclaimer",
+          govText: "We are an independent advisory service and are not affiliated with, endorsed by, or approved by any government. Use of our services does not influence official decisions. We uphold confidentiality and ethical guidance at all times.",
+          contactCardTitle: "Contact options",
+          chatBtn: "Chat with us",
+          complaintBtn: "Make a complaint",
+          mobileCTA: "Book Free Consultation",
+          ctaBtn: "Get started"
+        },
+        fr: {
+          brand: "CIVAJS — Soutien pour l'immigration et l'emploi au Canada",
+          banner: "Réservez votre CONSULTATION GRATUITE — Places limitées",
+          heroTitle: "Accompagnement personnalisé pour l'immigration au Canada et le soutien à l'emploi",
+          heroSubtitle: "De la demande de visa au soutien à la recherche d'emploi, nous vous guidons avec clarté, confidentialité et soin—à chaque étape.",
+          badgePrivacy: "Confidentialité assurée",
+          badgeCredential: "Crédential vérifié",
+          badgeConfidential: "Soutien confidentiel",
+          servicesTitle: "Services offerts",
+          svcVisa: "Assistance à la demande de visa",
+          svcVisaFr: "Français : Assistance à la demande de visa",
+          svcJob: "Soutien à la recherche d'emploi",
+          svcJobFr: "Français : Soutien à la recherche d'emploi",
+          svcDocs: "Préparation et révision des documents",
+          svcDocsFr: "Français : Préparation et révision des documents",
+          svcInterview: "Coaching d'entretien",
+          svcInterviewFr: "Français : Coaching d'entretien",
+          svcLegal: "Consultation juridique",
+          svcLegalFr: "Français : Consultation juridique",
+          testimonialsTitle: "Témoignages clients",
+          videoTitle: "Vidéo officielle d'information sur l'immigration canadienne",
+          videoNote: "Intégrée à des fins éducatives. Le contenu reste la propriété de son éditeur.",
+          formTitle: "Formulaire d'admission et de qualification client",
+          formInstructions: "Utilisez Tab/Shift+Tab pour naviguer. Appuyez sur Entrée pour continuer ou utilisez les boutons Précédent/Suivant.",
+          step1: "Informations personnelles",
+          labelFullName: "Nom complet",
+          labelEmail: "Adresse e-mail",
+          labelPhone: "Numéro de téléphone",
+          labelDob: "Date de naissance (plus de 18 ans)",
+          dobError: "Le demandeur doit avoir au moins 18 ans.",
+          labelPassport: "Numéro de passeport",
+          step2: "Préférences de visa & emploi",
+          labelVisaType: "Type de visa ou d'immigration",
+          selectDefault: "Sélectionnez...",
+          optStudy: "Permis d'études",
+          optWork: "Permis de travail",
+          optEE: "Entrée Express",
+          optPNP: "Programme des candidats des provinces",
+          optVisitor: "Visa de visiteur",
+          optFamily: "Parrainage familial",
+          optOther: "Autre",
+          labelPayment: "Montant de paiement prévu",
+          labelInterests: "Intérêts visa/emploi (détails)",
+          labelCV: "CV facultatif",
+          cvNote: "Télécharger un CV peut accélérer la procédure en clarifiant votre expérience.",
+          labelOtherDest: "Autres destinations (en dehors du Canada)",
+          labelOver18: "Je confirme avoir plus de 18 ans.",
+          step3: "Mentions légales et confidentialité",
+          legalNote: "Nous offrons un accompagnement indépendant. Nous ne sommes affiliés à aucune agence gouvernementale. Vos données sont traitées avec confidentialité.",
+          back: "Précédent",
+          next: "Suivant",
+          submit: "Soumettre la demande",
+          faqTitle: "Questions fréquentes",
+          faq1Q: "Garantissez-vous l'obtention du visa ?",
+          faq1A: "Non. Les décisions sont prises par les autorités d'immigration. Nous améliorons la qualité de votre dossier.",
+          faq2Q: "Offrez-vous un soutien en français et en espagnol ?",
+          faq2A: "Oui. Nous pouvons fournir documents et support en anglais, français et espagnol.",
+          faq3Q: "Combien de temps dure le processus ?",
+          faq3A: "Cela dépend du type de demande et des délais officiels.",
+          faq4Q: "Mes données seront-elles partagées ?",
+          faq4A: "Nous priorisons la confidentialité. Vos informations ne sont pas partagées sans consentement.",
+          blogTitle: "Derniers conseils & actualités sur l'immigration",
+          blog1: "Comprendre les bases d'Entrée Express",
+          blog1Note: "EN/FR : Éligibilité, score CRS, optimisation du profil.",
+          blog2: "Préparer un plan d'études solide",
+          blog2Note: "EN/ES : Narratif, finances, alignement de programme.",
+          blog3: "Aperçu des voies de permis de travail",
+          blog3Note: "EN : Parrainage employeur, LMIA, alternatives.",
+          contactTitle: "Contact et localisation",
+          contactNote: "Le téléphone et l'e-mail directs sont masqués par défaut. Utilisez la carte WhatsApp.",
+          embassyTitle: "Adresse de l'ambassade (New York, USA)",
+          newsletterTitle: "Newsletter",
+          newsletterLabel: "Adresse e-mail",
+          newsletterBtn: "S'abonner",
+          govTitle: "Mentions légales importantes",
+          govText: "Nous sommes indépendants et non approuvés par un gouvernement. Nos services n'influencent pas les décisions officielles.",
+          contactCardTitle: "Options de contact",
+          chatBtn: "Discuter avec nous",
+          complaintBtn: "Faire une réclamation",
+          mobileCTA: "Réservez une consultation gratuite",
+          ctaBtn: "Commencer"
+        },
+        es: {
+          brand: "CIVAJS — Apoyo para inmigración y empleo en Canadá",
+          banner: "Reserva tu CONSULTA GRATIS — Plazas limitadas",
+          heroTitle: "Apoyo experto y personalizado para inmigración a Canadá y empleo",
+          heroSubtitle: "Desde la solicitud de visa hasta el apoyo en la búsqueda de empleo, te guiamos con claridad y confidencialidad en cada paso.",
+          badgePrivacy: "Privacidad garantizada",
+          badgeCredential: "Credenciales verificadas",
+          badgeConfidential: "Apoyo confidencial",
+          servicesTitle: "Servicios ofrecidos",
+          svcVisa: "Asistencia para solicitud de visa",
+          svcVisaFr: "Francés: Assistance à la demande de visa",
+          svcJob: "Apoyo en la búsqueda de empleo",
+          svcJobFr: "Francés: Soutien à la recherche d'emploi",
+          svcDocs: "Preparación y revisión de documentos",
+          svcDocsFr: "Francés: Préparation et révision des documents",
+          svcInterview: "Entrenamiento para entrevistas",
+          svcInterviewFr: "Francés: Coaching d'entretien",
+          svcLegal: "Asesoría legal",
+          svcLegalFr: "Francés: Consultation juridique",
+          testimonialsTitle: "Testimonios de clientes",
+          videoTitle: "Video oficial de información de inmigración canadiense",
+          videoNote: "Insertado con fines educativos. El contenido es propiedad de su editor.",
+          formTitle: "Formulario de admisión y calificación del cliente",
+          formInstructions: "Usa Tab/Shift+Tab para navegar. Presiona Enter para avanzar o usa los botones Atrás/Siguiente.",
+          step1: "Datos personales",
+          labelFullName: "Nombre completo",
+          labelEmail: "Correo electrónico",
+          labelPhone: "Número de teléfono",
+          labelDob: "Fecha de nacimiento (mayor de 18)",
+          dobError: "El solicitante debe tener al menos 18 años.",
+          labelPassport: "Número de pasaporte",
+          step2: "Preferencias de visa y empleo",
+          labelVisaType: "Tipo de visa o inmigración",
+          selectDefault: "Seleccionar...",
+          optStudy: "Permiso de estudios",
+          optWork: "Permiso de trabajo",
+          optEE: "Entrada Express",
+          optPNP: "Programa de nominación provincial",
+          optVisitor: "Visa de visitante",
+          optFamily: "Patrocinio familiar",
+          optOther: "Otro",
+          labelPayment: "Monto de pago esperado",
+          labelInterests: "Intereses de visa/empleo (detalles)",
+          labelCV: "Carga de CV opcional",
+          cvNote: "Subir tu CV puede acelerar el proceso al aclarar tu experiencia.",
+          labelOtherDest: "Otros destinos (además de Canadá)",
+          labelOver18: "Confirmo que soy mayor de 18 años.",
+          step3: "Legal y confidencialidad",
+          legalNote: "Brindamos apoyo independiente. No estamos afiliados ni respaldados por ninguna agencia gubernamental.",
+          back: "Atrás",
+          next: "Siguiente",
+          submit: "Enviar solicitud",
+          faqTitle: "Preguntas frecuentes",
+          faq1Q: "¿Garantizan la aprobación de visas?",
+          faq1A: "No. Las decisiones las toman las autoridades de inmigración. Mejoramos la calidad de tu solicitud.",
+          faq2Q: "¿Ofrecen apoyo en francés y español?",
+          faq2A: "Sí. Documentación y soporte en inglés, francés y español.",
+          faq3Q: "¿Cuánto tarda el proceso?",
+          faq3A: "Depende del tipo de solicitud y los plazos oficiales.",
+          faq4Q: "¿Se compartirán mis datos?",
+          faq4A: "Priorizamos la confidencialidad. Tus datos no se comparten sin consentimiento.",
+          blogTitle: "Últimos consejos y noticias de inmigración",
+          blog1: "Entendiendo los fundamentos de Entrada Express",
+          blog1Note: "EN/FR: Elegibilidad, puntuación CRS, optimización del perfil.",
+          blog2: "Cómo preparar un plan de estudios sólido",
+          blog2Note: "EN/ES: Narrativa, finanzas, alineación del programa.",
+          blog3: "Panorama de vías de permiso de trabajo",
+          blog3Note: "EN: Patrocinio del empleador, LMIA y alternativas.",
+          contactTitle: "Contacto y ubicación",
+          contactNote: "El teléfono y correo directo están ocultos por defecto. Usa la tarjeta de WhatsApp.",
+          embassyTitle: "Dirección de la embajada (Nueva York, EE. UU.)",
+          newsletterTitle: "Boletín",
+          newsletterLabel: "Correo electrónico",
+          newsletterBtn: "Suscribirse",
+          govTitle: "Importante aviso legal",
+          govText: "Somos un servicio independiente y no estamos afiliados ni aprobados por ningún gobierno.",
+          contactCardTitle: "Opciones de contacto",
+          chatBtn: "Chatear con nosotros",
+          complaintBtn: "Hacer una queja",
+          mobileCTA: "Reserva consulta gratuita",
+          ctaBtn: "Empezar"
+        }
+      };
+
+      const select = document.getElementById('globalLang');
+      function apply(lang) {
+        const map = dict[lang] || dict.en;
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (map[key] !== undefined) el.textContent = map[key];
+        });
+      }
+      select.addEventListener('change', (e) => apply(e.target.value));
+      apply('en');
+    })();
   </script>
 
-<section aria-labelledby="testimonials-header" role="region" style="max-width: 800px; margin: 50px auto;">
-  <h2 id="testimonials-header">What Our Clients Say</h2>
-  <div style="text-align:center; margin-bottom: 20px;">
-    <label for="languageSelect" style="font-weight: bold;">Choose Language: </label>
-    <select id="languageSelect" aria-label="Select testimonial language">
-      <option value="en" selected>English</option>
-      <option value="fr">Français</option>
-      <option value="es">Español</option>
-      <!-- Add more languages as needed -->
-    </select>
-  </div>
-  <div class="testimonials" aria-live="polite" aria-atomic="true" aria-label="Client testimonials carousel" style="padding: 25px; background: #f1f9f3; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.18);">
-    <!-- English Testimonials -->
-    <div class="testimonial-slide lang-en active" aria-hidden="false">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client A. Smith photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
-      <p>"CIVAJS made my Canadian immigration process smooth and stress-free! Highly recommend."</p>
-      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- A. Smith</p>
-    </div>
-    <div class="testimonial-slide lang-en" aria-hidden="true">
-      <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Client M. Dupont photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
-      <p>"Thanks to their expert help, I landed a great job in Toronto. Merci!"</p>
-      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- M. Dupont</p>
-    </div>
-    <div class="testimonial-slide lang-en" aria-hidden="true">
-      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client S. Walker photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
-      <p>"The team was professional and supportive throughout my visa application process."</p>
-      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- S. Walker</p>
-    </div>
-
-    <!-- French Testimonials -->
-    <div class="testimonial-slide lang-fr" aria-hidden="true" style="display:none;">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client A. Smith photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
-      <p>"CIVAJS a rendu mon processus d'immigration canadienne fluide et sans stress! Je recommande vivement."</p>
-      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- A. Smith</p>
-    </div>
-    <div class="testimonial-slide lang-fr" aria-hidden="true" style="display:none;">
-      <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Client M. Dupont photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
-      <p>"Grâce à leur aide experte, j'ai trouvé un excellent emploi à Toronto. Merci!"</p>
-      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- M. Dupont</p>
-    </div>
-    <div class="testimonial-slide lang-fr" aria-hidden="true" style="display:none;">
-      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client S. Walker photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
-      <p>"L'équipe a été professionnelle et solidaire tout au long de mon processus de demande de visa."</p>
-      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- S. Walker</p>
-    </div>
-
-    <!-- Spanish Testimonials -->
-    <div class="testimonial-slide lang-es" aria-hidden="true" style="display:none;">
-
-<img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client A. Smith photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
-      <p>"¡CIVAJS hizo que mi proceso de inmigración canadiense fuera fácil y sin estrés! Muy recomendable."</p>
-      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- A. Smith</p>
-    </div>
-    <div class="testimonial-slide lang-es" aria-hidden="true" style="display:none;">
-      <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Client M. Dupont photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
-      <p>"Gracias a su ayuda experta, conseguí un gran trabajo en Toronto. ¡Gracias!"</p>
-      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- M. Dupont</p>
-    </div>
-    <div class="testimonial-slide lang-es" aria-hidden="true" style="display:none;">
-      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client S. Walker photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
-      <p>"El equipo fue profesional y solidario durante todo mi proceso de solicitud de visa."</p>
-      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- S. Walker</p>
-    </div>
-  </div>
-</section>
-
-<script>
-  // Testimonials carousel variables
-  const testimonialSlides = document.querySelectorAll('.testimonial-slide');
-  let testimonialIndex = 0;
-
-  // Language selection
-  const languageSelect = document.getElementById('languageSelect');
-
-  function showLanguageTestimonials(language) {
-    testimonialSlides.forEach(slide => {
-      if (slide.classList.contains(lang-${language})) {
-        slide.style.display = 'block';
-        slide.setAttribute('aria-hidden', 'false');
-      } else {
-        slide.style.display = 'none';
-        slide.setAttribute('aria-hidden', 'true');
-      }
-    });
-    testimonialIndex = 0;
-    // Activate first testimonial of selected language
-    const activeSlides = Array.from(testimonialSlides).filter(slide => slide.classList.contains(lang-${language}));
-    activeSlides.forEach((slide, idx) => slide.classList.toggle('active', idx === 0));
-  }
-
-  // Language change event
-  languageSelect.addEventListener('change', function () {
-    showLanguageTestimonials(this.value);
-  });
-
-  // Auto rotate active language testimonials every 8 seconds
-  setInterval(() => {
-    const activeLanguage = languageSelect.value;
-    const activeSlides = Array.from(testimonialSlides).filter(slide => slide.classList.contains(lang-${activeLanguage}));
-    if (!activeSlides.length) return;
-    activeSlides[testimonialIndex].classList.remove('active');
-    testimonialIndex = (testimonialIndex + 1) % activeSlides.length;
-    activeSlides[testimonialIndex].classList.add('active');
-  }, 8000);
-
-  // Run on page load
-  showLanguageTestimonials('en');
-</script>
-
-<section aria-labelledby="client-intake-header" role="region" style="max-width: 800px; margin: 50px auto;">
-  <h2 id="client-intake-header">Client Intake & Application Form</h2>
-  <form id="intakeForm" novalidate>
-    <fieldset style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 30px;">
-      <legend style="font-weight: 700; font-size: 1.2rem; color: #016937;">Personal Information</legend>
-
-      <label for="fullName">Full Name <span aria-hidden="true" style="color: red;">*</span></label><br/>
-      <input type="text" id="fullName" name="fullName" aria-required="true" required autocomplete="name" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
-
-      <label for="emailAddress">Email Address <span aria-hidden="true" style="color: red;">*</span></label><br/>
-      <input type="email" id="emailAddress" name="emailAddress" aria-required="true" required autocomplete="email" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
-
-      <label for="phoneNumber">Phone Number <span aria-hidden="true" style="color: red;">*</span></label><br/>
-      <input type="tel" id="phoneNumber" name="phoneNumber" aria-required="true" required pattern="^\+?\d{7,15}$" placeholder="+1234567890" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
-
-      <label for="dob">Date of Birth <span aria-hidden="true" style="color: red;">*</span></label><br/>
-      <input type="date" id="dob" name="dob" aria-required="true" required max="" style="width: 50%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
-      <small>You must be over 18 years old to qualify.</small>
-    </fieldset>
-
-    <fieldset style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 30px;">
-      <legend style="font-weight: 700; font-size: 1.2rem; color: #016937;">Passport & Visa Information</legend>
-
-      <label for="passportNumber">Passport Number <span aria-hidden="true" style="color: red;">*</span></label><br/>
-      <input type="text" id="passportNumber" name="passportNumber" aria-required="true" required style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
-
-      <label for="visaType">Visa or Immigration Service Looking For</label><br/>
-      <select id="visaType" name="visaType" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
-        <option value="">-- Select an option --</option>
-        <option value="study">Study Visa</option>
-        <option value="work">Work Visa</option>
-        <option value="permanent_resident">Permanent Residency</option>
-        <option value="visitor">Visitor Visa</option>
-        <option value="other">Other Specific Visa</option>
-      </select>
-
-      <label for="expectedPayment">How Much Are You Expecting to Pay?</label><br/>
-      <select id="expectedPayment" name="expectedPayment" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
-        <option value="">-- Select Payment Range --</option>
-        <option value="under_1000">Under $1000</option>
-        <option value="1000_3000">$1000 - $3000</option>
-        <option value="3000_5000">$3000 - $5000</option>
-        <option value="above_5000">Above $5000</option>
-      </select>
-
-      <label for="cvUpload">Upload Your CV (Optional)</label><br/>
-      <input type="file" id="cvUpload" name="cvUpload" accept=".pdf,.doc,.docx" style="margin: 8px 0 12px;">
-      <small>Having a CV will make your application process faster.</small>
-    </fieldset>
-
-    <fieldset style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 30px;">
-      <legend style="font-weight: 700; font-size: 1.2rem; color: #016937;">Job or Immigration Interests</legend>
-
-<label for="lookingFor">What Are You Looking For?</label><br/>
-      <textarea id="lookingFor" name="lookingFor" rows="3" placeholder="Briefly describe your immigration or job interests" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 20px;"></textarea>
-
-      <label for="destination">If Not Canada, Where Do You Want to Go?</label><br/>
-      <input type="text" id="destination" name="destination" placeholder="City, Country, or Region" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 20px;">
-    </fieldset>
-
-    <fieldset style="border: 1px solid #016937; border-radius: 10px; padding: 20px; margin-bottom: 30px; background-color: #d1f5d1;">
-      <legend style="font-weight: 700; font-size: 1.2rem; color: #016937;">Government Approved Information</legend>
-      <p>This free immigration assistance system is approved by the US Government.</p>
-      <p style="font-style: italic;">All information is confidential and only used to assist your application.</p>
-    </fieldset>
-
-    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.25rem; padding: 18px 12px;">Submit Application</button>
-  </form>
-</section>
-
-<script>
-  // Set max date for dob field to enforce 18 years + age restriction
-  const dobField = document.getElementById("dob");
-  const today = new Date();
-  const eighteenYearsAgo = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
-  dobField.max = eighteenYearsAgo.toISOString().split("T")[0];
-
-  // Form submission validation and auto-reply simulation
-  const intakeForm = document.getElementById("intakeForm");
-
-  intakeForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    // Basic required field validation
-    if (!intakeForm.reportValidity()) {
-      alert("Please fill in all required fields correctly.");
-      return;
-    }
-
-    // Clear file inputs and processing message
-    const cvFile = document.getElementById("cvUpload").files[0];
-    let cvStatus = "No CV uploaded.";
-    if (cvFile) {
-      cvStatus = Uploaded CV: ${cvFile.name};
-    }
-
-    // Simulate sending and auto reply (replace with backend as needed)
-    alert(
-      Thank you for your application, ${this.fullName.value}! We have received your details.\n +
-      ${cvStatus}\nYou will receive an email confirmation shortly.
-    );
-
-    intakeForm.reset();
-  });
-</script>
-
-<section aria-labelledby="video-header" role="region" style="max-width: 720px; margin: 60px auto 40px;">
-  <h2 id="video-header">Introduction Video / Vidéo d'introduction</h2>
-  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;border-radius:15px;box-shadow:0 8px 34px rgba(0,0,0,0.3);">
-    <iframe src="https://www.youtube.com/embed/-LOvoMH9Ozw" title="Official Canada Immigration Introduction" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:15px;"></iframe>
-  </div>
-  <p style="font-style: italic; color: #444; margin-top: 15px; text-align: center;">Comprehensive guide to Canadian immigration and job support services.</p>
-</section>
-
-<section aria-labelledby="disclaimer-header" role="region" style="max-width: 720px; margin: 40px auto 40px; background: #f7f9f8; border-left: 6px solid #26a851; padding: 20px 30px; border-radius: 8px; box-shadow: 0 0 25px rgba(38,168,81,0.18); line-height: 1.55;">
-  <h2 id="disclaimer-header" style="color: #2c6f2c; font-weight: 700;">Official Government Approved Disclaimer</h2>
-  <p>This free immigration assistance system is authorized and approved by US Government immigration services.</p>
-  <p>All client data is securely handled and confidential in compliance with legal regulations.</p>
-  <p>Note: We do not guarantee visa approval; assistance provided is professional advisory only.</p>
-</section>
-
-<footer role="contentinfo" style="background-color: #016937; color: white; padding: 30px; text-align: center; font-weight: 600; font-size: 0.95rem;">
-  &copy; 2025 Canada Immigration Visa and Jobs Support (CIVAJS). All Rights Reserved. Privacy Policy | Terms of Service | Confidentiality Assured
-</footer>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CGPQDDDTL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9CGPQDDDTL');
-</script>
-
-<!-- Tawk.to Live Chat -->
-<script type="text/javascript">
+  <!-- Tawk.to live chat widget -->
+  <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
-    s1.src='https://embed.tawk.to/68d1bd7c16bb7a19269aeaab/default';
+    s1.src='https://embed.tawk.to/68d1bd7c16bb7a19269aeaab/1';
     s1.charset='UTF-8';
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
   })();
-</script>
+  </script>
+</body>
+</html>
+```
