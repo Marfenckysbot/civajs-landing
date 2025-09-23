@@ -1,648 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Canada Immigration Visa and Jobs Support (CIVAJS)</title>
-<meta name="description" content="Personalized Canadian immigration and job support services. Expert visa guidance and legal advice. Start your new life in Canada today!" />
-<meta name="keywords" content="Canada immigration, visa assistance, legal advice, job support, Canadian visa, coaching" />
-<meta property="og:title" content="Canada Immigration Visa and Jobs Support (CIVAJS)" />
-<meta property="og:description" content="Trusted Canadian immigration and job support services for a new life in Canada." />
-<meta property="og:url" content="https://marfenckysbot.github.io/civajs-landing/" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://marfenckysbot.github.io/civajs-landing/assets/og-image.png" />
-<link rel="canonical" href="https://marfenckysbot.github.io/civajs-landing/" />
-<link rel="icon"
-  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAAA0CAYAAADvl6/qAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAAmJLR0QA/4ePzL8AAA+CSURBVHja7V2hdyLHFJ6PLr6sAa6JTLElv0YPiCpGoTO//8LDQSiRjHMteDwwTNTYnLzWY8pqEXkcTPjCFEiol3Vv1/Tx171pnOHvk9vf7/NbpqlCUP3cp5JBNDQ0NBQkF+bbRSo+PgRMoPAp+tn08fHx5Qlv+AQ/8JK/wGX/sM3v8cn+1ejSzNjZWKkpPTyU1VXH1zeRRjCm9f/mWjXAqh/fzR8On2cnKgZU4FHVxansqKKiQkBBDUFhYRHRsVwvNqPYZfzWIw4OBhwzGIXB0xMhGcV4hl71PepXOOIxhkYGPmJhom+VKMvrtGzcaLqaPP9Rgk5MTE8oXdgFBAxG8TgsHoVKrlSfTbeW//3yoOG7POQXJCuTokenyL9PLHe1q+lWduBJM5GRkYMtjAcSg5xvnH6z7ejeE8T4Od7TpiqgP28z7VOQrczuhKwwH0woIG0k+RfRk4cDksKoSrkvWci+PhIX+vQRP40HeB78LhGisNiAc42xfvV3cVE0K0u0ovVaKgnl9ff0YuX+Jw2j1E1IUAP1Cgc5DZsQOE4II9NimplelQQ/OIlfNRnWAMjo5mLQq4m9wN+sknuD6nqLxp3FwlXkAzsbW1pY3vwx1+MDBZ3VaAWw4qeOlsjj3z3HQem9vhMGHOhcslb7mYcRQmRwy0wcHoDkxM/FBbYEtIbKLrgXzEmTppjRRCrt54SZ5iIjAlaiSILfy8dmI/H0TT0YKdDHjoQAdjRHDxctgckKrEB+E6uLxh/i80BgDJb8LXAnZUo2SkDYs59Hk4gJx6ijG9mf3c5wiUymXOYjoSjkyPDfnfPpOZrLYWptP47HzL6nJwVZXc0qpOZDm7w9Rw7+3ROeUwTc5PEPCQXy3nBOET9+2kqGMlUNkLYTrguZSPZq7JZRMfeHsYUyF53rYtrTWUminFhofujoGdJnPYijspli8pu/s2p15+XSa1T3TCzQ5i95zPvHZ/HetIu9HG7U5aEhJEj4cwGZERkrH9MSKzyU/V7m9AIoHZMMkAofmwkDgxMi6kVeQ5Bq2qJwynq4Un37rJ6oJTX+QIQER9uXZU6EJG0BhPpyCYaFapZEXzzVbq3RVLFXtdp14po6W0sQCKcbNB+jLEyLCDTl/HU2/JRSiGUGFiEDAEAQBwMM1GlMIvYgAAAABJRU5ErkJggg=="
-  />
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canada Immigration Visa and Jobs Support (CIVAJS)</title>
+  <meta name="description" content="Personalized Canadian immigration and job support services. Expert visa guidance and legal advice. Start new life in Canada!" />
+  <meta name="keywords" content="Canada immigration, visa, job support, legal advisory, expert guidance" />
+  <meta name="author" content="CIVAJS" />
+  <meta property="og:title" content="Canada Immigration Visa and Jobs Support (CIVAJS)" />
+  <meta property="og:description" content="Trusted Canadian immigration and job support services for Canadians and more." />
+  <meta property="og:url" content="https://marfenckysbot.github.io/civajs-landing/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://marfenckysbot.github.io/civajs-landing/assets/og-image.png" />
+  <link rel="canonical" href="https://marfenckysbot.github.io/civajs-landing/" />
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAAA0CAYAAADvl6/qAAAA0ElEQVR42u3UMQ0AIBAEQPr/f96zQRNUWbJuEjIB479zIAAUVAIUQikEAYiiL5Vmhalt0SrNDAFzwKbH5l6GFdyTp5to0EzXdzSZkpzNfMgpY9DiBDfEAwggjo4jqCsEDbqgugKBoHnoAcS7iFTfGL2KxVZwSiF0KFE+HwqQEKMFBAwUIpRO5ht/1M6hr0BjuqLqAwKBgTeCBxLuIVj5c8ColumnEri7P6HZMADLPZTaEkwIxwAAAABJRU5ErkJggg==" />
 <style>
-  * {
-    box-sizing: border-box;
-  }
+    /* Resetting CSS */
+    * {
+      box-sizing: border-box;
+    }
 
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')
-      no-repeat center center fixed;
-    background-size: cover;
-    color: #2a2a2a;
-    scroll-behavior: smooth;
-  }
+    /* Base styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #2a2a2a;
+      scroll-behavior: smooth;
+    }
 
-  a {
-    color: #d12b2b;
-    text-decoration: none;
-  }
+    a {
+      color: #d12b2b;
+      text-decoration: none;
+    }
 
-  a:hover,
-  a:focus {
-    text-decoration: underline;
-    outline: none;
-  }
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
 
-  nav {
-    background: rgba(1, 105, 55, 0.9);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.45);
-  }
-
-  .nav-title {
-    font-weight: 700;
-    font-size: 1.4rem;
-  }
-
-  .nav-contact a {
-    background-color: #d12b2b;
-    padding: 8px 18px;
-    border-radius: 4px;
-    font-weight: 600;
-  }
-
-  .nav-contact a:hover,
-  .nav-contact a:focus {
-    background-color: #a11e1e;
-  }
-
-  .urgency-banner {
-    background: rgba(209, 43, 43, 0.95);
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    padding: 18px 0;
-    font-size: 1.2rem;
-    position: relative;
-  }
-
-  .countdown {
-    font-weight: 900;
-    letter-spacing: 0.05em;
-    margin-left: 10px;
-  }
-
-  main.container {
-    max-width: 960px;
-    margin: 40px auto 60px;
-    background: rgba(255, 255, 255, 0.98);
-    padding: 35px 25px 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-  }
-
-  h1,
-  h2,
-  h3 {
-    color: #016937;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-p,
-  li {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 18px;
-  }
-
-  ul.services-list {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 40px;
-  }
-
-  ul.services-list li {
-    padding-left: 30px;
-    position: relative;
-    margin-bottom: 12px;
-  }
-
-  ul.services-list li::before {
-    content: '✔';
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #cc2f2f;
-    font-weight: bold;
-  }
-
-  .contact-info a {
-    color: #016937;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-
-  .video-placeholder {
-    border: 2px dashed #cc2f2f;
-    background: #f9f9f9;
-    color: #777;
-    font-weight: 600;
-    text-align: center;
-    line-height: 220px;
-    margin: 30px auto 40px;
-    width: 100%;
-    max-width: 720px;
-    border-radius: 10px;
-  }
-
-  .testimonials {
-    max-width: 720px;
-    margin: 40px auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    background-color: #e9f9f0;
-  }
-
-  .testimonial-slide {
-    padding: 30px 40px;
-    font-style: italic;
-    color: #444;
-    display: none;
-  }
-
-  .testimonial-slide.active {
-    display: block;
-  }
-
-  .testimonial-slide img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 12px;
-    border: 3px solid #cc2f2f;
-  }
-
-  .testimonial-author {
-    font-weight: bold;
-    color: #016937;
-  }
-
-  .faq dt {
-    font-weight: 700;
-    margin-top: 30px;
-    cursor: pointer;
-    position: relative;
-    padding-right: 35px;
-  }
-
-  .faq dt::after {
-    content: '+';
-    font-weight: 900;
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 1.8rem;
-    color: #cc2f2f;
-    transition: transform 0.3s ease;
-  }
-
-  .faq dt.open::after {
-    content: '-';
-    transform: rotate(180deg);
-  }
-
-  .faq dd {
-    margin-left: 20px;
-    margin-top: 10px;
-    display: none;
-    line-height: 1.5;
-  }
-
-  .faq dd.visible {
-    display: block;
-  }
-
-  .newsletter {
-    background-color: #eaf3ea;
-    border-radius: 40px;
-    max-width: 600px;
-    margin: 50px auto 30px;
-    padding: 30px 50px;
-    text-align: center;
-    box-shadow: 0px 6px 50px hsl(112 49% 68% / 0.28);
-  }
-
-  .newsletter form {
-    display: flex;
-    justify-content: center;
-  }
-
-  .newsletter input[type='email'] {
-    font-size: 1.1em;
-    border-radius: 40px 0 0 40px;
-    padding: 16px 22px;
-    width: 65%;
-    border: 1px solid #ccc;
-    border-right: none;
-    outline: none;
-  }
-
-  .newsletter button {
-    padding: 16px 25px;
-    background-color: #cc2f2f;
-    border: none;
-    border-radius: 0 40px 40px 0;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 300ms ease;
-  }
-
-  .newsletter button:hover,
-  .newsletter button:focus {
-    background-color: #7f1919;
-    outline: none;
-  }
-
-  .social-links {
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  .social-links a {
-    display: inline-block;
-    margin: 0 22px;
-    font-size: 2.5em;
-    color: #cc2f2f;
-    transition: color 300ms ease;
-  }
-
-  .social-links a:hover,
-  .social-links a:focus {
-    color: #7f1919;
-    outline: none;
-  }
-
-  .trust-badges {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-  }
-
-  .trust-badge {
-    background-color: #016937;
-    color: white;
-    padding: 18px 35px;
-    border-radius: 40px;
-    font-weight: 700;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    min-width: 190px;
-  }
-
-  .trust-badge[title]:hover::after {
-    content: attr(title);
-    display: block;
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: #ccc;
-    font-weight: normal;
-  }
-
-  #scrollTopBtn {
-    position: fixed;
-    bottom: 24px;
-    right: 30px;
-    background-color: #cc2f2f;
-    color: white;
-    border: none;
-    padding: 20px 25px;
-    font-size: 28px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
-    z-index: 10000;
-  }
-
-#scrollTopBtn:hover,
-  #scrollTopBtn:focus {
-    background-color: #7f1919;
-    outline: none;
-  }
-
-  iframe.map {
-    width: 100%;
-    height: 320px;
-    border: none;
-    border-radius: 28px;
-    margin: 60px auto 90px;
-  }
-
-  @media (max-width: 768px) {
+    /* Animated sticky nav */
     nav {
-      flex-direction: column;
-      padding: 20px 15px;
+      background-color: rgba(1, 105, 55, 0.95);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10000;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+      transition: top 0.4s ease-in-out;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-title img {
+      height: 45px;
+      margin-right: 12px;
     }
 
     .nav-contact a {
-      margin-top: 18px;
-      padding: 14px 28px;
-      width: 100%;
-      display: block;
-      text-align: center;
+      background-color: #d12b2b;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+      color: white;
     }
 
-    .btn-primary {
+    .nav-contact a:hover,
+    .nav-contact a:focus {
+      background-color: #7f1919;
+    }
+
+    /* Urgency banner */
+    .urgency-banner {
+      background: rgba(209, 43, 43, 0.95);
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      padding: 20px 10px;
+      font-size: 1.3rem;
+      margin-top: 70px;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    }
+
+    .countdown {
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      margin-left: 12px;
+    }
+
+    /* Main container */
+    main.container {
+      max-width: 960px;
+      margin: 40px auto 80px;
+      background: rgba(255, 255, 255, 0.98);
+      padding: 35px 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 0 32px rgba(0, 0, 0, 0.42);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #016937;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p,
+    li {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    ul.services-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 40px;
+    }
+
+  ul.services-list li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    ul.services-list li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      color: #cc2f2f;
+      font-weight: 900;
+      font-size: 1.15em;
+    }
+
+    .contact-info a {
+      color: #016937;
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .video-placeholder {
+      border: 3px dashed #cc2f2f;
+      background: #f9f9f9;
+      color: #575757;
+      font-weight: 700;
+      text-align: center;
+      padding: 120px 0;
+      margin: 40px auto 60px;
+      max-width: 720px;
+      border-radius: 15px;
+      font-style: italic;
+      font-size: 1.25rem;
+    }
+
+    /* Testimonials section */
+    .testimonials {
+      max-width: 760px;
+      margin: 50px auto;
+      padding: 25px 40px;
+      background-color: #e9f9f0;
+      border-radius: 15px;
+      box-shadow: 0 5px 24px rgba(0, 0, 0, 0.15);
+      position: relative;
+    }
+
+    .testimonial-slide {
+      display: none;
+      font-style: italic;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .testimonial-slide.active {
+      display: block;
+    }
+
+    .testimonial-slide img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 4px solid #cc2f2f;
+      margin-bottom: 12px;
+      object-fit: cover;
+    }
+
+    .testimonial-author {
+      font-weight: 800;
+      color: #016937;
+    }
+
+    /* FAQ styles */
+    .faq dt {
+      font-weight: 700;
+      margin-top: 28px;
+      cursor: pointer;
+      position: relative;
+      padding-right: 30px;
+    }
+
+    .faq dt::after {
+      content: '+';
+      font-weight: 900;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 1.6rem;
+      color: #cc2f2f;
+      transition: transform 0.3s ease;
+    }
+
+    .faq dt.open::after {
+      content: '-';
+      transform: rotate(180deg);
+    }
+
+    .faq dd {
+      margin-left: 24px;
+      margin-top: 10px;
+      display: none;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .faq dd.visible {
+      display: block;
+    }
+
+    /* Newsletter subscription form */
+    .newsletter {
+      background-color: #eaf3ea;
+      border-radius: 40px;
+      max-width: 600px;
+      margin: 60px auto 40px;
+      padding: 32px 50px;
+      text-align: center;
+      box-shadow: 0px 6px 50px hsl(112 49% 68% / 0.32);
+    }
+
+    .newsletter form {
+      display: flex;
+      justify-content: center;
+    }
+
+    .newsletter input[type='email'] {
+      font-size: 1.15em;
+      border-radius: 40px 0 0 40px;
+      padding: 18px 26px;
+      width: 65%;
+      border: 1px solid #ccc;
+      border-right: none;
+      outline: none;
+    }
+
+    .newsletter button {
+      padding: 18px 28px;
+      background-color: #cc2f2f;
+      border: none;
+      border-radius: 0 40px 40px 0;
+      font-weight: 700;
+      color: white;
+      cursor: pointer;
       font-size: 1.2em;
-      padding: 16px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .newsletter button:hover,
+    .newsletter button:focus {
+      background-color: #7f1919;
+      outline: none;
+    }
+
+    /* Social media links */
+    .social-links {
+      text-align: center;
+      margin-top: 70px;
+      margin-bottom: 60px;
     }
 
     .social-links a {
-      font-size: 1.9em;
-      margin: 0 12px;
+      display: inline-block;
+      margin: 0 18px;
+      font-size: 2.7em;
+      color: #cc2f2f;
+      transition: color 0.3s ease;
+      cursor: pointer;
+      vertical-align: middle;
     }
 
-    .newsletter {
-      padding: 35px 30px;
-      max-width: 95%;
+    .social-links a:hover,
+    .social-links a:focus {
+      color: #7f1919;
+      outline: none;
     }
-  }
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CGPQDDDTL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'G-9CGPQDDDTL');
-</script>
-<script>
-  // FAQ toggle with keyboard support
-  document.addEventListener('DOMContentLoaded', () => {
-    const dtList = document.querySelectorAll('.faq dt');
-    dtList.forEach((dt) => {
-      dt.setAttribute('tabindex', '0');
-      dt.addEventListener('click', () => toggleFaq(dt));
-      dt.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          toggleFaq(dt);
-        }
-      });
-    });
 
-    function toggleFaq(dt) {
-      const dd = dt.nextElementSibling;
-      const opened = dt.classList.toggle('open');
-      if (opened) {
-        dd.style.display = 'block';
-        dt.setAttribute('aria-expanded', 'true');
+    /* Using official brand icons as SVG inline */
+    .social-links svg {
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      vertical-align: middle;
+      transition: fill 0.3s ease;
+    }
+
+    /* Trust badges */
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+
+.trust-badge {
+      background-color: #016937;
+      color: white;
+      padding: 18px 38px;
+      border-radius: 40px;
+      font-weight: 700;
+      box-shadow: 0 8px 48px rgba(0, 0, 0, 0.28);
+      text-align: center;
+      min-width: 190px;
+      cursor: default;
+      position: relative;
+    }
+
+    .trust-badge[title]:hover::after {
+      content: attr(title);
+      display: block;
+      margin-top: 9px;
+      font-size: 0.9rem;
+      color: #ccc;
+      font-weight: 500;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Back to top button */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      background-color: #cc2f2f;
+      color: white;
+      border: none;
+      padding: 22px 28px;
+      font-size: 28px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+      display: none;
+      z-index: 11000;
+      transition: background-color 0.3s ease;
+    }
+
+    #scrollTopBtn:hover,
+    #scrollTopBtn:focus {
+      background-color: #7f1919;
+      outline: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      nav {
+        padding: 14px 20px;
+      }
+
+      .newsletter {
+        max-width: 94%;
+      }
+
+      .newsletter input[type='email'] {
+        width: 60%;
+        padding: 16px 20px;
+      }
+
+      .newsletter button {
+        padding: 16px 20px;
+        font-size: 1em;
+      }
+
+      .social-links {
+        margin-bottom: 50px;
+      }
+
+      .social-links a {
+        font-size: 2.3em;
+      }
+    }
+  </style>
+
+  <!-- WhatsApp Floating Button -->
+  <div id="whatsappBtn" title="WhatsApp Chat" role="button" aria-pressed="false" tabindex="0" aria-label="Open WhatsApp chat">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="white"><path d="M20.52 3.48a11.91 11.91 0 0 0-16.87 16.84l-1.3 4.72a.6.6 0 0 0 .7.7l4.73-1.3a11.92 11.92 0 0 0 13.04-20zM10.67 17.28l-2.4-1.15a.83.83 0 0 1-.49-.54L6.11 11a.53.53 0 0 1 .2-.62l5.46-4.2a.68.68 0 0 1 .76 0l2.21 1.65a.49.49 0 0 1 .06.77l-.51.5a.74.74 0 0 1-.48.19c-.14 0-.26 0-.38-.03a.75.75 0 0 1-.57-.47l-.51-1.17a.3.3 0 0 0-.42-.16l-2.64 2a.78.78 0 0 0-.26.55l-.06 1a.26.26 0 0 0 .34.22l1.58-.5a.36.36 0 0 1 .39.15zm8.8-5.37a.75.75 0 0 0-1 .2.77.77 0 0 0-.07.76c.44.91.14 2.1-.67 3.21a3.84 3.84 0 0 1-3.18 1.6 3.22 3.22 0 0 1-1.65-.48l-.12-.08a2.76 2.76 0 0 1-1.15-1.16 3.58 3.58 0 0 1-.24-2.09c.06-.37.07-.25-.04-.27a.77.77 0 0 0-.12-1 7.5 7.5 0 0 0-1.29.69 4.23 4.23 0 0 0-1.51 1.57s-.56 1.24-.3 2.72a4.1 4.1 0 0 0 4.11 3.35 9.3 9.3 0 0 0 2.16-.22 5.36 5.36 0 0 0 2.75-1.76c.82-1.08 1.15-2.39.82-3.18z"/></svg>
+  </div>
+
+  <!-- Contact Reveal -->
+  <div id="contactReveal" aria-live="polite" aria-atomic="true" style="display:none;position:fixed;bottom:100px;right:25px;width:300px;background:white;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,0.3);z-index:11001;padding:15px;">
+    <button id="chatBtn" style="background:#25d366;color:white;border:none;padding:10px 20px;border-radius:10px;margin-right:12px;cursor:pointer;">Chat with us</button>
+    <button id="complainBtn" style="background:#ff4757;color:white;border:none;padding:10px 20px;border-radius:10px;cursor:pointer;">Make a Complaint</button>
+    <div id="chatInfo" style="margin-top:20px;display:none;font-weight:600;">Phone: +1 656 200 7384<br>Email: catherineglocklin@gmail.com</div>
+    <div id="complainInfo" style="margin-top:20px;display:none;font-weight:600;">Send your complaint to: complaints@civajs.com</div>
+  </div>
+
+  <script>
+    // WhatsApp and contact reveal toggle
+    const whatsappBtn = document.getElementById("whatsappBtn");
+    const contactReveal = document.getElementById("contactReveal");
+    const chatBtn = document.getElementById("chatBtn");
+    const complainBtn = document.getElementById("complainBtn");
+    const chatInfo = document.getElementById("chatInfo");
+    const complainInfo = document.getElementById("complainInfo");
+
+whatsappBtn.addEventListener('click', () => {
+      if (contactReveal.style.display === 'block') {
+        contactReveal.style.display = 'none';
+        whatsappBtn.setAttribute('aria-pressed','false');
       } else {
-        dd.style.display = 'none';
-        dt.setAttribute('aria-expanded', 'false');
+        contactReveal.style.display = 'block';
+        whatsappBtn.setAttribute('aria-pressed','true');
       }
-    }
+    });
 
-    // Auto rotating testimonials
-    const testimonials = document.querySelectorAll('.testimonial-slide');
-    let currentIdx = 0;
-    if (testimonials.length) {
-      testimonials[0].classList.add('active');
-      setInterval(() => {
-        testimonials[currentIdx].classList.remove('active');
-        currentIdx = (currentIdx + 1) % testimonials.length;
-        testimonials[currentIdx].classList.add('active');
-      }, 8000);
-    }
+    chatBtn.addEventListener('click', () => {
+      chatInfo.style.display = 'block';
+      complainInfo.style.display = 'none';
+    });
 
-    // Scroll to top button
-    const scrollBtn = document.getElementById('scrollTopBtn');
+    complainBtn.addEventListener('click', () => {
+      chatInfo.style.display = 'none';
+      complainInfo.style.display = 'block';
+    });
+
+    // Animated sticky navbar on scroll
+    let lastScrollY = window.pageYOffset;
+    const nav = document.querySelector('nav');
+
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) scrollBtn.style.display = 'block';
-      else scrollBtn.style.display = 'none';
-    });
-    scrollBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-
-    // Countdown timer urgency banner (48 hours example)
-    const countdownEl = document.getElementById('countdown-timer');
-    const deadline = new Date(Date.now() + 48 * 60 * 60 * 1000);
-
-    function updateTimer() {
-      const now = new Date();
-      const diff = deadline - now;
-      if (diff <= 0) {
-        countdownEl.textContent = 'Limited slots filling fast!';
-        clearInterval(timerInterval);
-        return;
+      const currentScrollY = window.pageYOffset;
+      if (currentScrollY > lastScrollY) {
+        nav.style.top = '-90px'; // hide nav on scroll down
+      } else {
+        nav.style.top = '0';
       }
-      const hrs = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const secs = Math.floor((diff % (1000 * 60)) / 1000);
-      countdownEl.textContent = ${hrs}h ${mins}m ${secs}s left;
-    }
-    updateTimer();
-    const timerInterval = setInterval(updateTimer, 1000);
+      lastScrollY = currentScrollY;
+    });
 
-    // Newsletter submission
-    const newsletterForm = document.querySelector('.newsletter form');
-    if (newsletterForm) {
-      newsletterForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thanks for subscribing to our newsletter!');
-        e.target.reset();
-      });
+    // Scroll top button
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 400) {
+        scrollTopBtn.style.display = 'block';
+      } else {
+        scrollTopBtn.style.display = 'none';
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+<section aria-labelledby="testimonials-header" role="region" style="max-width: 800px; margin: 50px auto;">
+  <h2 id="testimonials-header">What Our Clients Say</h2>
+  <div style="text-align:center; margin-bottom: 20px;">
+    <label for="languageSelect" style="font-weight: bold;">Choose Language: </label>
+    <select id="languageSelect" aria-label="Select testimonial language">
+      <option value="en" selected>English</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <!-- Add more languages as needed -->
+    </select>
+  </div>
+  <div class="testimonials" aria-live="polite" aria-atomic="true" aria-label="Client testimonials carousel" style="padding: 25px; background: #f1f9f3; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.18);">
+    <!-- English Testimonials -->
+    <div class="testimonial-slide lang-en active" aria-hidden="false">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client A. Smith photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
+      <p>"CIVAJS made my Canadian immigration process smooth and stress-free! Highly recommend."</p>
+      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- A. Smith</p>
+    </div>
+    <div class="testimonial-slide lang-en" aria-hidden="true">
+      <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Client M. Dupont photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
+      <p>"Thanks to their expert help, I landed a great job in Toronto. Merci!"</p>
+      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- M. Dupont</p>
+    </div>
+    <div class="testimonial-slide lang-en" aria-hidden="true">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client S. Walker photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
+      <p>"The team was professional and supportive throughout my visa application process."</p>
+      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- S. Walker</p>
+    </div>
+
+    <!-- French Testimonials -->
+    <div class="testimonial-slide lang-fr" aria-hidden="true" style="display:none;">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client A. Smith photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
+      <p>"CIVAJS a rendu mon processus d'immigration canadienne fluide et sans stress! Je recommande vivement."</p>
+      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- A. Smith</p>
+    </div>
+    <div class="testimonial-slide lang-fr" aria-hidden="true" style="display:none;">
+      <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Client M. Dupont photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
+      <p>"Grâce à leur aide experte, j'ai trouvé un excellent emploi à Toronto. Merci!"</p>
+      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- M. Dupont</p>
+    </div>
+    <div class="testimonial-slide lang-fr" aria-hidden="true" style="display:none;">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client S. Walker photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
+      <p>"L'équipe a été professionnelle et solidaire tout au long de mon processus de demande de visa."</p>
+      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- S. Walker</p>
+    </div>
+
+    <!-- Spanish Testimonials -->
+    <div class="testimonial-slide lang-es" aria-hidden="true" style="display:none;">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client A. Smith photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
+      <p>"¡CIVAJS hizo que mi proceso de inmigración canadiense fuera fácil y sin estrés! Muy recomendable."</p>
+      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- A. Smith</p>
+    </div>
+    <div class="testimonial-slide lang-es" aria-hidden="true" style="display:none;">
+      <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Client M. Dupont photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
+      <p>"Gracias a su ayuda experta, conseguí un gran trabajo en Toronto. ¡Gracias!"</p>
+      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- M. Dupont</p>
+    </div>
+    <div class="testimonial-slide lang-es" aria-hidden="true" style="display:none;">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client S. Walker photo" width="70" height="70" style="border-radius: 50%; border: 4px solid #28a745; margin-bottom: 10px;" />
+      <p>"El equipo fue profesional y solidario durante todo mi proceso de solicitud de visa."</p>
+      <p class="testimonial-author" style="font-weight:bold; color:#2c6f2c;">- S. Walker</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Testimonials carousel variables
+  const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+  let testimonialIndex = 0;
+
+  // Language selection
+  const languageSelect = document.getElementById('languageSelect');
+
+  function showLanguageTestimonials(language) {
+    testimonialSlides.forEach(slide => {
+      if (slide.classList.contains(lang-${language})) {
+        slide.style.display = 'block';
+        slide.setAttribute('aria-hidden', 'false');
+      } else {
+        slide.style.display = 'none';
+        slide.setAttribute('aria-hidden', 'true');
+      }
+    });
+    testimonialIndex = 0;
+    // Activate first testimonial of selected language
+    const activeSlides = Array.from(testimonialSlides).filter(slide => slide.classList.contains(lang-${language}));
+    activeSlides.forEach((slide, idx) => slide.classList.toggle('active', idx === 0));
+  }
+
+  // Language change event
+  languageSelect.addEventListener('change', function () {
+    showLanguageTestimonials(this.value);
+  });
+
+  // Auto rotate active language testimonials every 8 seconds
+  setInterval(() => {
+    const activeLanguage = languageSelect.value;
+    const activeSlides = Array.from(testimonialSlides).filter(slide => slide.classList.contains(lang-${activeLanguage}));
+    if (!activeSlides.length) return;
+    activeSlides[testimonialIndex].classList.remove('active');
+    testimonialIndex = (testimonialIndex + 1) % activeSlides.length;
+    activeSlides[testimonialIndex].classList.add('active');
+  }, 8000);
+
+  // Run on page load
+  showLanguageTestimonials('en');
+</script>
+
+<section aria-labelledby="client-intake-header" role="region" style="max-width: 800px; margin: 50px auto;">
+  <h2 id="client-intake-header">Client Intake & Application Form</h2>
+  <form id="intakeForm" novalidate>
+    <fieldset style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 30px;">
+      <legend style="font-weight: 700; font-size: 1.2rem; color: #016937;">Personal Information</legend>
+
+      <label for="fullName">Full Name <span aria-hidden="true" style="color: red;">*</span></label><br/>
+      <input type="text" id="fullName" name="fullName" aria-required="true" required autocomplete="name" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
+
+      <label for="emailAddress">Email Address <span aria-hidden="true" style="color: red;">*</span></label><br/>
+      <input type="email" id="emailAddress" name="emailAddress" aria-required="true" required autocomplete="email" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
+
+      <label for="phoneNumber">Phone Number <span aria-hidden="true" style="color: red;">*</span></label><br/>
+      <input type="tel" id="phoneNumber" name="phoneNumber" aria-required="true" required pattern="^\+?\d{7,15}$" placeholder="+1234567890" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
+
+      <label for="dob">Date of Birth <span aria-hidden="true" style="color: red;">*</span></label><br/>
+      <input type="date" id="dob" name="dob" aria-required="true" required max="" style="width: 50%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
+      <small>You must be over 18 years old to qualify.</small>
+    </fieldset>
+
+    <fieldset style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 30px;">
+      <legend style="font-weight: 700; font-size: 1.2rem; color: #016937;">Passport & Visa Information</legend>
+
+      <label for="passportNumber">Passport Number <span aria-hidden="true" style="color: red;">*</span></label><br/>
+      <input type="text" id="passportNumber" name="passportNumber" aria-required="true" required style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
+
+      <label for="visaType">Visa or Immigration Service Looking For</label><br/>
+      <select id="visaType" name="visaType" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
+        <option value="">-- Select an option --</option>
+        <option value="study">Study Visa</option>
+        <option value="work">Work Visa</option>
+        <option value="permanent_resident">Permanent Residency</option>
+        <option value="visitor">Visitor Visa</option>
+        <option value="other">Other Specific Visa</option>
+      </select>
+
+      <label for="expectedPayment">How Much Are You Expecting to Pay?</label><br/>
+      <select id="expectedPayment" name="expectedPayment" style="width: 100%; padding: 12px; margin: 8px 0 20px; border-radius: 6px; border: 1px solid #ccc;">
+        <option value="">-- Select Payment Range --</option>
+        <option value="under_1000">Under $1000</option>
+        <option value="1000_3000">$1000 - $3000</option>
+        <option value="3000_5000">$3000 - $5000</option>
+        <option value="above_5000">Above $5000</option>
+      </select>
+
+      <label for="cvUpload">Upload Your CV (Optional)</label><br/>
+      <input type="file" id="cvUpload" name="cvUpload" accept=".pdf,.doc,.docx" style="margin: 8px 0 12px;">
+      <small>Having a CV will make your application process faster.</small>
+    </fieldset>
+
+    <fieldset style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; margin-bottom: 30px;">
+      <legend style="font-weight: 700; font-size: 1.2rem; color: #016937;">Job or Immigration Interests</legend>
+
+<label for="lookingFor">What Are You Looking For?</label><br/>
+      <textarea id="lookingFor" name="lookingFor" rows="3" placeholder="Briefly describe your immigration or job interests" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 20px;"></textarea>
+
+      <label for="destination">If Not Canada, Where Do You Want to Go?</label><br/>
+      <input type="text" id="destination" name="destination" placeholder="City, Country, or Region" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 20px;">
+    </fieldset>
+
+    <fieldset style="border: 1px solid #016937; border-radius: 10px; padding: 20px; margin-bottom: 30px; background-color: #d1f5d1;">
+      <legend style="font-weight: 700; font-size: 1.2rem; color: #016937;">Government Approved Information</legend>
+      <p>This free immigration assistance system is approved by the US Government.</p>
+      <p style="font-style: italic;">All information is confidential and only used to assist your application.</p>
+    </fieldset>
+
+    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.25rem; padding: 18px 12px;">Submit Application</button>
+  </form>
+</section>
+
+<script>
+  // Set max date for dob field to enforce 18 years + age restriction
+  const dobField = document.getElementById("dob");
+  const today = new Date();
+  const eighteenYearsAgo = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+  dobField.max = eighteenYearsAgo.toISOString().split("T")[0];
+
+  // Form submission validation and auto-reply simulation
+  const intakeForm = document.getElementById("intakeForm");
+
+  intakeForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Basic required field validation
+    if (!intakeForm.reportValidity()) {
+      alert("Please fill in all required fields correctly.");
+      return;
     }
 
-    // Contact form submission - demo only
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-      contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you for reaching out! We will contact you shortly.');
-        e.target.reset();
-      });
+    // Clear file inputs and processing message
+    const cvFile = document.getElementById("cvUpload").files[0];
+    let cvStatus = "No CV uploaded.";
+    if (cvFile) {
+      cvStatus = Uploaded CV: ${cvFile.name};
     }
+
+    // Simulate sending and auto reply (replace with backend as needed)
+    alert(
+      Thank you for your application, ${this.fullName.value}! We have received your details.\n +
+      ${cvStatus}\nYou will receive an email confirmation shortly.
+    );
+
+    intakeForm.reset();
   });
 </script>
 
-</head>
-
-<body>
-  <nav>
-    <div class="nav-title" aria-label="Canada Immigration Visa and Jobs Support logo and title">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAAA0CAYAAADvl6/qAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAAmJLR0QA/4ePzL8AAA+CSURBVHja7V2hdyLHFJ6PLr6sAa6JTLElv0YPiCpGoTO//8LDQSiRjHMteDwwTNTYnLzWY8pqEXkcTPjCFEiol3Vv1/Tx171pnOHvk9vf7/NbpqlCUP3cp5JBNDQ0NBQkF+bbRSo+PgRMoPAp+tn08fHx5Qlv+AQ/8JK/wGX/sM3v8cn+1ejSzNjZWKkpPTyU1VXH1zeRRjCm9f/mWjXAqh/fzR8On2cnKgZU4FHVxansqKKiQkBBDUFhYRHRsVwvNqPYZfzWIw4OBhwzGIXB0xMhGcV4hl71PepXOOIxhkYGPmJhom+VKMvrtGzcaLqaPP9Rgk5MTE8oXdgFBAxG8TgsHoVKrlSfTbeW//3yoOG7POQXJCuTokenyL9PLHe1q+lWduBJM5GRkYMtjAcSg5xvnH6z7ejeE8T4Od7TpiqgP28z7VOQrczuhKwwH0woIG0k+RfRk4cDksKoSrkvWci+PhIX+vQRP40HeB78LhGisNiAc42xfvV3cVE0K0u0ovVaKgnl9ff0YuX+Jw2j1E1IUAP1Cgc5DZsQOE4II9NimplelQQ/OIlfNRnWAMjo5mLQq4m9wN+sknuD6nqLxp3FwlXkAzsbW1pY3vwx1+MDBZ3VaAWw4qeOlsjj3z3HQem9vhMGHOhcslb7mYcRQmRwy0wcHoDkxM/FBbYEtIbKLrgXzEmTppjRRCrt54SZ5iIjAlaiSILfy8dmI/H0TT0YKdDHjoQAdjRHDxctgckKrEB+E6uLxh/i80BgDJb8LXAnZUo2SkDYs59Hk4gJx6ijG9mf3c5wiUymXOYjoSjkyPDfnfPpOZrLYWptP47HzL6nJwVZXc0qpOZDm7w9Rw7+3ROeUwTc5PEPCQXy3nBOET9+2kqGMlUNkLYTrguZSPZq7JZRMfeHsYUyF53rYtrTWUminFhofujoGdJnPYijspli8pu/s2p15+XSa1T3TCzQ5i95zPvHZ/HetIu9HG7U5aEhJEj4cwGZERkrH9MSKzyU/V7m9AIoHZMMkAofmwkDgxMi6kVeQ5Bq2qJwynq4Un37rJ6oJTX+QIQER9uXZU6EJG0BhPpyCYaFapZEXzzVbq3RVLFXtdp14po6W0sQCKcbNB+jLEyLCDTl/HU2/JRSiGUGFiEDAEAQBwMM1GlMIvYgAAAABJRU5ErkJggg=="
-        alt="CIVAJS Logo" width="140" height="70" style="vertical-align: middle; margin-right: 10px;"> CIVAJS - Canada Immigration & Jobs
-    </div>
-    <div class="nav-contact">
-      <a href="tel:+16562007384" aria-label="Call now phone number +1 656 200 7384">Call Now: +1 656 200 7384</a>
-    </div>
-  </nav>
-
-  <div class="urgency-banner" role="alert" aria-live="assertive" aria-atomic="true">
-    Book Your FREE Consultation - Limited Slots Available!
-    <span id="countdown-timer" class="countdown" aria-label="Countdown timer"></span>
+<section aria-labelledby="video-header" role="region" style="max-width: 720px; margin: 60px auto 40px;">
+  <h2 id="video-header">Introduction Video / Vidéo d'introduction</h2>
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;border-radius:15px;box-shadow:0 8px 34px rgba(0,0,0,0.3);">
+    <iframe src="https://www.youtube.com/embed/-LOvoMH9Ozw" title="Official Canada Immigration Introduction" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:15px;"></iframe>
   </div>
-
-  <main class="container" role="main">
-    <h1 tabindex="0">Welcome to Canada Immigration Visa and Jobs Support (CIVAJS)</h1>
-    <p>Your trusted partner in navigating Canadian immigration and job opportunities. We provide personalized, expert support to help you and your family start a new life in Canada.</p>
-
-    <section aria-labelledby="services-header" role="region">
-      <h2 id="services-header">Our Services / Nos Services</h2>
-      <ul class="services-list" role="list">
-        <li>Visa Application Assistance / Assistance à la demande de visa</li>
-        <li>Job Search Support / Soutien à la recherche d'emploi</li>
-        <li>Document Preparation and Review / Préparation et révision des documents</li>
-        <li>Interview Coaching / Coaching d'entretien</li>
-        <li>Legal Advisory / Consultation juridique</li>
-      </ul>
-      <div class="service-benefits" aria-label="Benefits of choosing our services" style="display: flex; gap: 30px; justify-content: center; margin-top: 30px;">
-        <div style="text-align:center; max-width: 220px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#016937" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L3.5 20.29h17L12 2z"/></svg>
-          <h3 style="margin: 10px 0 5px;">Expert Guidance</h3>
-          <p>Professional support at each step of immigration and job search.</p>
-        </div>
-        <div style="text-align:center; max-width: 220px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#016937" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" ry="4"/></svg>
-          <h3 style="margin: 10px 0 5px;">Fast Processing</h3>
-          <p>Efficient handling to expedite your visa applications.</p>
-        </div>
-        <div style="text-align:center; max-width: 220px;">
-
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#016937" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 22 22 2 22"/></svg>
-          <h3 style="margin: 10px 0 5px;">Certified Legal Advice</h3>
-          <p>Qualified immigration legal consultants at your service.</p>
-        </div>
-      </div>
-    </section>
-
-    <section aria-labelledby="contact-header" role="region">
-      <h2 id="contact-header">Contact Us / Contactez-nous</h2>
-      <p class="contact-info" style="font-weight:600;">
-        Embassy Address: 123 Maple Street, New York, NY 10001, USA
-      </p>
-      <p class="contact-info">
-        Phone: <a href="tel:+16562007384">+1 656 200 7384</a><br/>
-        Email: 
-        <a href="mailto:stacy_cooper@myyahoo.com">stacy_cooper@myyahoo.com</a> |
-        <a href="mailto:catherineglocklin@gmail.com">catherineglocklin@gmail.com</a>
-      </p>
-      <p>
-        Chat with us: <a href="#" onclick="alert('Chat feature coming soon!')" aria-label="Start live chat">Start Chat</a>
-      </p>
-    </section>
-
-    <section aria-labelledby="video-header" role="region">
-      <h2 id="video-header">Introduction Video / Vidéo d'introduction</h2>
-      <div class="video-placeholder" aria-label="Video placeholder">
-        Video coming soon! / Vidéo bientôt disponible!
-      </div>
-    </section>
-
-    <section aria-labelledby="testimonials-header" role="region">
-      <h2 id="testimonials-header">What Our Clients Say / Témoignages de nos clients</h2>
-      <div class="testimonials" aria-live="polite" aria-atomic="true" aria-label="Client testimonials carousel" style="max-width:720px;margin-left:auto;margin-right:auto;overflow:hidden;box-shadow: 0 4px 20px rgba(0,0,0,0.2);background: #e9f9f0;border-radius:15px;margin-top:30px;">
-        <div class="testimonial-slide active" aria-hidden="false" style="padding:30px 40px;display: block;font-style: italic;color: #444;">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client A. Smith photo" width="60" height="60" style="border-radius:50%;border:3px solid #cc2f2f;margin-bottom:12px;"/>
-          <p>"CIVAJS made my Canadian immigration process smooth and stress-free! Highly recommend."</p>
-          <p class="testimonial-author" style="color:#016937; font-weight:bold;">- A. Smith</p>
-        </div>
-        <div class="testimonial-slide" aria-hidden="true" style="padding:30px 40px;display:none;font-style: italic;color: #444;">
-          <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Client M. Dupont photo" width="60" height="60" style="border-radius:50%;border:3px solid #cc2f2f;margin-bottom:12px;"/>
-          <p>"Thanks to their expert help, I landed a great job in Toronto. Merci!"</p>
-          <p class="testimonial-author" style="color:#016937; font-weight:bold;">- M. Dupont</p>
-        </div>
-      </div>
-    </section>
-<!-- Continued from previous block -->
-
-<section aria-labelledby="faq-header" role="region">
-  <h2 id="faq-header">Frequently Asked Questions / Questions fréquentes</h2>
-  <dl class="faq" style="max-width:720px;margin:auto;">
-    <dt tabindex="0" role="button" aria-expanded="false" style="font-weight:bold;margin-top:25px;cursor:pointer;position:relative;padding-right:20px;">What is the typical processing time? / Quel est le délai de traitement habituel ?</dt>
-    <dd style="margin-left:20px;margin-top:8px;line-height:1.5;">Processing times vary by visa; usually 6-12 months. / Les délais varient selon le type de visa; généralement 6-12 mois.</dd>
-    <dt tabindex="0" role="button" aria-expanded="false" style="font-weight:bold;margin-top:25px;cursor:pointer;position:relative;padding-right:20px;">How much does the service cost? / Combien coûte le service ?</dt>
-    <dd style="margin-left:20px;margin-top:8px;line-height:1.5;">Our pricing is transparent and affordable. Contact us for a quote. / Nos tarifs sont transparents et abordables. Contactez-nous pour un devis.</dd>
-    <dt tabindex="0" role="button" aria-expanded="false" style="font-weight:bold;margin-top:25px;cursor:pointer;position:relative;padding-right:20px;">Do you provide legal advice? / Fournissez-vous des conseils juridiques ?</dt>
-    <dd style="margin-left:20px;margin-top:8px;line-height:1.5;">Yes, we have qualified immigration legal advisors on staff. / Oui, nous avons des conseillers juridiques qualifiés en immigration.</dd>
-  </dl>
+  <p style="font-style: italic; color: #444; margin-top: 15px; text-align: center;">Comprehensive guide to Canadian immigration and job support services.</p>
 </section>
 
-<section aria-labelledby="contactform-header" role="region">
-  <h2 id="contactform-header">Send Us a Message / Envoyez-nous un message</h2>
-  <form aria-label="Contact form" id="contactForm" style="max-width: 600px; margin: auto;" novalidate>
-    <label for="name">Name / Nom:</label><br />
-    <input type="text" id="name" name="name" required style="width:100%;padding:10px;margin-top:5px;margin-bottom:15px;border-radius:6px;border:1px solid #ccc;" /><br />
-    <label for="email">Email / E-mail:</label><br />
-    <input type="email" id="email" name="email" required value="catherineglocklin@gmail.com" style="width:100%;padding:10px;margin-top:5px;margin-bottom:15px;border-radius:6px;border:1px solid #ccc;" /><br />
-    <label for="message">Message / Message:</label><br />
-    <textarea id="message" name="message" rows="5" required style="width:100%;padding:10px;margin-top:5px;margin-bottom:20px;border-radius:6px;border:1px solid #ccc;"></textarea><br />
-    <button type="submit" class="btn-primary" style="width: 100%;">Send Message / Envoyer</button>
-  </form>
+<section aria-labelledby="disclaimer-header" role="region" style="max-width: 720px; margin: 40px auto 40px; background: #f7f9f8; border-left: 6px solid #26a851; padding: 20px 30px; border-radius: 8px; box-shadow: 0 0 25px rgba(38,168,81,0.18); line-height: 1.55;">
+  <h2 id="disclaimer-header" style="color: #2c6f2c; font-weight: 700;">Official Government Approved Disclaimer</h2>
+  <p>This free immigration assistance system is authorized and approved by US Government immigration services.</p>
+  <p>All client data is securely handled and confidential in compliance with legal regulations.</p>
+  <p>Note: We do not guarantee visa approval; assistance provided is professional advisory only.</p>
 </section>
 
-<section aria-labelledby="blog-header" role="region" style="max-width: 720px; margin: 60px auto 0;">
-  <h2 id="blog-header">Latest Blog & News / Dernières nouvelles</h2>
-  <ul style="list-style:none; padding-left: 0;">
-    <li><a href="#" style="color:#cc2f2f;text-decoration:none;">How to Prepare for Your Canadian Visa Interview</a></li>
-    <li><a href="#" style="color:#cc2f2f;text-decoration:none;">Top 10 Job Opportunities for New Immigrants in Canada 2025</a></li>
-    <li><a href="#" style="color:#cc2f2f;text-decoration:none;">Understanding Canadian Immigration Rules and Regulations</a></li>
-  </ul>
-</section>
-
-<section aria-labelledby="map-header" role="region" style="max-width: 720px; margin: 80px auto 50px;">
-  <h2 id="map-header">Our Office Location / Notre emplacement</h2>
-  <!-- Placeholder Google Map Static Image substituting for API -->
-  <a href="https://maps.google.com/?q=New+York+USA" target="_blank" rel="noopener" aria-label="Google map link to New York USA">
-    <img src="https://maps.googleapis.com/maps/api/staticmap?center=New+York+USA&zoom=12&size=720x300&markers=color:red%7Clabel:C%7C40.7128,-74.0060" alt="Google map static image showing New York USA" style="width:100%;border-radius:14px;" />
-  </a>
-  <p style="text-align:center; margin-top: 12px; font-style: italic; color: #555;">Click map image for directions</p>
-</section>
-
-<section aria-labelledby="newsletter-header" role="region" style="max-width: 720px; margin: 0 auto 50px;">
-  <h2 id="newsletter-header">Subscribe to Our Newsletter / Abonnez-vous à notre Newsletter</h2>
-  <form class="newsletter" aria-label="Subscribe to newsletter form" novalidate>
-    <input type="email" placeholder="Your email / Votre e-mail" aria-required="true" required
-      style="padding: 15px 18px; border-radius: 30px 0px 0px 30px; border: 1px solid #ccc; border-right: none; width: 65%; font-size: 1.1em;">
-    <button type="submit" style="padding: 15px 25px; border-radius: 0px 30px 30px 0px; border: none; background-color: #cc2f2f; color: white; font-weight: 700; font-size: 1.1em; cursor: pointer;">Subscribe
-      / S'abonner</button>
-  </form>
-</section>
-
-<section aria-labelledby="follow-header" role="region" style="max-width: 720px; margin: 0 auto 50px;">
-  <h2 id="follow-header">Follow Us / Suivez-nous</h2>
-  <div class="social-links" aria-label="Social media links">
-    <a href="https://www.facebook.com/share/15w1yF1v1i/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
-    <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
-    <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-    <a href="https://www.instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-  </div>
-</section>
-
-<section aria-labelledby="trusted-header" role="region" style="max-width: 720px; margin: 0 auto 30px;">
-  <h2 id="trusted-header">Trusted By / Approuvé par</h2>
-  <div class="trust-badges">
-    <div class="trust-badge" title="Fully licensed Canadian immigration consultants">Licensed Consultants / Consultants
-      agréés</div>
-    <div class="trust-badge" title="We keep your information confidential">100% Confidential / 100% confidentiel</div>
-    <div class="trust-badge" title="Member of Canadian Federation of Immigration Consultants">Canadian Federation
-      Member / Membre de la fédération canadienne</div>
-  </div>
-</section>
-
-<button id="scrollTopBtn" aria-label="Scroll to top">&#8679;</button>
-</main>
-
-<footer>
-  &copy; 2025 Canada Immigration Visa and Jobs Support (CIVAJS). Privacy | Confidentiality assured.
+<footer role="contentinfo" style="background-color: #016937; color: white; padding: 30px; text-align: center; font-weight: 600; font-size: 0.95rem;">
+  &copy; 2025 Canada Immigration Visa and Jobs Support (CIVAJS). All Rights Reserved. Privacy Policy | Terms of Service | Confidentiality Assured
 </footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CGPQDDDTL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9CGPQDDDTL');
+</script>
+
+<!-- Tawk.to Live Chat -->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/68d1bd7c16bb7a19269aeaab/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
