@@ -16,15 +16,15 @@ if (!html.includes('Preview only: this form is not connected')) {
   errors.push('The intake form must clearly disclose that it is preview-only.');
 }
 
-for (const match of html.matchAll(/<script\\b([^>]*)>([\\s\\S]*?)<\\/script>/gi)) {
+for (const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
   const attrs = match[1];
   const code = match[2].trim();
   if (!code) continue;
-  if (/type=["']application\\/ld\\+json["']/i.test(attrs)) {
+  if (/type=["']application\/ld\\+json["']/i.test(attrs)) {
     try { JSON.parse(code); } catch (error) {
       errors.push('Invalid JSON-LD structured data: ' + error.message);
     }
-  } else if (!/\\bsrc=/i.test(attrs)) {
+  } else if (!/\bsrc=/i.test(attrs)) {
     try { new Script(code); } catch (error) {
       errors.push('Invalid inline JavaScript: ' + error.message);
     }
