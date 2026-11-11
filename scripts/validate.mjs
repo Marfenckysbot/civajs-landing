@@ -20,7 +20,7 @@ for (const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
   const attrs = match[1];
   const code = match[2].trim();
   if (!code) continue;
-  if (/type=["']application\/ld\\+json["']/i.test(attrs)) {
+  if (attrs.includes('application/ld+json')) {
     try { JSON.parse(code); } catch (error) {
       errors.push('Invalid JSON-LD structured data: ' + error.message);
     }
@@ -32,7 +32,7 @@ for (const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
 }
 
 if (errors.length) {
-  console.error('CIVAJS checks failed:\\n- ' + errors.join('\\n- '));
+  console.error(['CIVAJS checks failed:', ...errors.map(error => '- ' + error)].join('\n'));
   process.exitCode = 1;
 } else {
   console.log('CIVAJS checks passed: inline scripts, structured data and trust disclosures.');
